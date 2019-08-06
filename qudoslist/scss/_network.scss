@@ -84,21 +84,25 @@
 
 ul.col.nav {
     height: 56px;
+
     li {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         a {
             display: flex;
             flex-direction: column;
             justify-content: center;
             font-size: 10px;
             color: $qudos-grey;
-            padding: 0;
+            padding: 0 10px;
+
             &:hover,
             &:focus {
                 background-color: transparent;
             }
+
             i {
                 font-size: 18px;
             }
@@ -110,6 +114,7 @@ ul.col.nav {
             color: $qudos-darkblue;
             font-size: 16px;
             font-weight: 600;
+            padding: 0 30px;
             i {
                 font-size: 32px;
             }
