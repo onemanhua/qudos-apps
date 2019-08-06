@@ -64,7 +64,7 @@
 
             .form-control {
                 font-size: 18px;
-                height: 35px;
+                height: 30px;
                 padding-top: 0px;
                 padding-left: 30px;
                 border-radius: 20px;
@@ -73,7 +73,7 @@
             .form-control-feedback {
                 font-size: 18px;
                 color: #aaa;
-                top: 30px;
+                top: 27px;
                 left: 20px;
             }
 
@@ -243,9 +243,11 @@
         left: 10px;
         margin-left: 5px;
         margin-right: 5px;
+
         #qn-groups {
             padding-left: 0;
             padding-right: 0;
+
             /** Create Groups Stylings **/
             .qn__create-groups {
                 padding-top: 1vh;
@@ -354,7 +356,9 @@
             }
         }
     }
+
     #groups-network--create {
+
         /** Create Groups Stylings **/
         .qn__create-groups {
             .qn__create-groups-form {
@@ -368,6 +372,7 @@
 
                         .form-control-hover-icon {
                             right: 8px;
+
                             .filter-icon {
                                 margin-top: -40px;
                             }
@@ -440,8 +445,9 @@
         .has-search {
             .form-control-hover-icon {
                 width: 78.8vw;
+
                 .filter-icon {
-                    margin-top: -51.68px;
+                    margin-top: -48px;
                     visibility: visible;
                 }
             }
@@ -553,19 +559,34 @@
         }
     }
 }
+
 @media(max-width: 360px) {
+    .page__content {
+        .visible-mobile {
+            .filter {
+                .nav {
+                    .nav-item {
+                        .nav-link {
+                            
+                        }
+                    }
+                }
+            }
+        }
 
-    /** Qudos Searchbar Stylings **/
-    .qudosfaves__searchbar {
+        /** Qudos Searchbar Stylings **/
+        .qudosfaves__searchbar {
 
-        /* Bootstrap 4 text input with search icon */
-        .has-search {
-            .form-control-hover-icon {
-                width: 90vw;
+            /* Bootstrap 4 text input with search icon */
+            .has-search {
+                .form-control-hover-icon {
+                    width: 90.5vw;
+                }
             }
         }
     }
 }
+
 @media(max-width: 320px) {
     .tab-content {
         width: 100vw;

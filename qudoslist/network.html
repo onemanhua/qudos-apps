@@ -41,7 +41,7 @@
 				<div class="col-12">
 					<div class="header__content">
 						<a href="#" class="header__logo">
-							<img src="img/logo--white.png" alt="">
+							<svg class="qudoslist-logo-white"></svg>
 						</a>
 
 						<form action="#" class="header__form">
@@ -218,14 +218,13 @@
 		<div class="row m-0">
 			<div class="col-12 p-0">
 				<div id="body"></div>
-				<div class="top__nav d-flex justify-content-between" ng-show="mobileView && is_auth">
-					<a href="home.html" ui-sref="home"><i class="fal fa-list-alt top__nav-icon"><span>10</span></i></a>
-					<a href="#" class="active" ui-sref="network"><i
-							class="fal fa-user-friends top__nav-icon"><span>99</span></i></a>
-					<a href="messages.html"><i class="fal fa-comments-alt top__nav-icon"><span>12</span></i></a>
-					<a href="notifications.html"><i class="fal fa-bell top__nav-icon"><span>11</span></i></a>
-					<a href="settings.html" data-toggle="modal" data-target="#settingsModal"><i
-							class="fal fa-cog top__nav-icon"></i></a>
+				<div class="top__nav d-flex justify-content-between border-bottom-0" ng-show="mobileView && is_auth">
+					<a href="home.html" ui-sref="home"><svg class="mx-auto list-icon top__nav-icon"></svg></a>
+					<a href="#" ui-sref="network"><svg class="mx-auto network-icon top__nav-icon"></s></a>
+					<a href="messages.html"><svg class="mx-auto message-icon top__nav-icon"></svg></a>
+					<a href="notifications.html"><svg class="mx-auto notification-icon top__nav-icon"></svg></a>
+					<a href="settings.html" data-toggle="modal" data-target="#settingsModal"><svg
+							class="mx-auto settings-icon top__nav-icon"></i></a>
 				</div>
 				<ui-view></ui-view>
 			</div>
@@ -316,38 +315,21 @@
 				</div><!-- Desktop filter search end -->
 				<!-- Mobile filter search start -->
 				<span class="visible-mobile">
-					<div class="filter">
-						<ul class="nav nav-fill" role="tablist">
-							<li class="nav-item"><a class="nav-link active" data-toggle="tab"
-									href="#qudosfave-network"><button class="first-child-btn">QudosFave™
+					<div class="filter px-0">
+						<ul class="nav justify-content-center" role="tablist">
+							<li class="nav-item text-center"><a class="nav-link py-0 w-100 h-100 active"
+									data-toggle="tab" href="#qudosfave-network"><button class="first-child-btn mx-0"><i
+											class="fas fa-bullseye w-100"></i>My QudosFave™
 										<span>Drivers</span></button></a></li>
-							<li class="nav-item"><a class="nav-link" data-toggle="tab"
-									href="#network--people"><button>People</button></a></li>
-							<li class="nav-item"><a class="nav-link" data-toggle="tab"
-									href="#network--groups"><button>Groups</button></a></li>
-							<li class="nav-item"><a class="nav-link" data-toggle="tab"
-									href="#network--page"><button>Pages</button></a></li>
+							<li class="nav-item text-center mx-1"><a class="nav-link py-0 w-100 h-100" data-toggle="tab"
+									href="#network--people"><button class="mx-0"><i
+											class="fas fa-user-friends w-100"></i>Friends</button></a></li>
+							<li class="nav-item text-center"><a class="nav-link py-0 w-100 h-100" data-toggle="tab"
+									href="#network--groups"><button class="mx-0"><i class="fas fa-users w-100"></i>
+										Groups</button></a></li>
 						</ul>
 					</div>
 				</span><!-- Mobile filter search end -->
-				<!-- Qudos searchbar start -->
-				<div class="visible-mobile container">
-					<div class="row">
-						<div class="col">
-							<section class="qudosfaves__searchbar">
-								<div class="form-group has-search">
-									<span class="fa fa-search form-control-feedback"></span>
-									<input type="text" class="form-control" placeholder="Search">
-									<span class="form-control-hover-icon">
-										<a role="button" href="#">
-											<svg class="filter-icon"></svg>
-										</a>
-									</span>
-								</div>
-							</section>
-						</div>
-					</div>
-				</div><!-- Qudos searchbar end -->
 				<div class="collapse" id="show__qudo__search">
 					<div class="page__panel mob-filter">
 						<span class="mob-filter__results">
@@ -378,14 +360,30 @@
 									</ul>
 								</span><!-- Desktop navbar view end -->
 								<!-- Mobile navbar view start -->
-								<span class="visible-mobile pb-5">
-									<ul class="col nav nav-fill nav-tabs px-4">
-										<li class="nav-item"><a data-toggle="tab" class="nav-link active"
-												href="#qudosfave-network--myqudos">MyQudos™</a></li>
-										<li class="nav-item"><a data-toggle="tab" class="nav-link"
-												href="#qudosfave-network--explore">Explore</a></li>
+								<span class="visible-mobile pb-0 pt-4">
+									<ul class="col nav text-center justify-content-center px-4">
+										<li class="nav-item"><a data-toggle="tab" class="nav-link w-100 h-100 active" href="#qudosfave-network--myqudos"><i class="fas fa-user w-100"></i>My QudosFaves™</a></li>
+										<li class="nav-item"><a data-toggle="tab" class="nav-link w-100 h-100" href="#qudosfave-network--explore"><i class="fas fa-compass w-100"></i>Explore</a></li>
 									</ul>
 								</span><!-- Mobile navbar view end -->
+								<!-- Qudos searchbar start -->
+								<div class="visible-mobile container">
+									<div class="row">
+										<div class="col">
+											<section class="qudosfaves__searchbar">
+												<div class="form-group has-search">
+													<span class="fal fa-search form-control-feedback"></span>
+													<input type="text" class="form-control" placeholder="Search">
+													<span class="form-control-hover-icon">
+														<a role="button" href="#">
+															<svg class="filter-icon"></svg>
+														</a>
+													</span>
+												</div>
+											</section>
+										</div>
+									</div>
+								</div><!-- Qudos searchbar end -->
 								<div class="tab-content">
 									<!-- QudosFave MyQudos tab start -->
 									<div id="qudosfave-network--myqudos" class="tab-pane in active">
@@ -1060,7 +1058,8 @@
 													<div class="btn-toolbar mx-auto">
 														<a href="#" class="btn qudos-primary-btn mr-2">Create
 															Page</a>
-														<a href="network.html" class="btn qudos-secondary-btn ml-2">Cancel</a>
+														<a href="network.html"
+															class="btn qudos-secondary-btn ml-2">Cancel</a>
 													</div>
 												</div>
 											</form>
