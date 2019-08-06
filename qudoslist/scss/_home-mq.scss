@@ -1,0 +1,163 @@
+@media (max-width: 1280px) {
+    .modal {
+        label{
+            font-size: 14px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        button {
+            span {
+                font-size: 24px;
+            }
+        }
+        #privacySettings, #languageSettings {
+            font-size: 12px;
+            height: 40px;
+        }
+        .qudos-primary-btn {
+            @include qudos-primary-button;
+            font-size: 14px;
+            width: 100px;
+            height: 30px;
+        }
+        .qudos-tertiary-btn {
+            @include qudos-tertiary-button;
+            font-size: 14px;
+            width: 100px;
+            height: 30px;
+        }
+    }
+    .header__content {
+        height: 55px;
+    }
+    .page {
+        margin-top: 55px;
+        .top__nav {
+            a {
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 325px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 650px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 630px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 470px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 414px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 384px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 260px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 240px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .qudoslist-card {    
+        .post-footer-action-wrapper {
+            form {
+                .col-xs-8 {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

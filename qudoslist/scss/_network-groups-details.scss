@@ -1,0 +1,49 @@
+.group-description-heading {
+    background-color: white;
+    padding: 1.2rem 3%;
+    .col-11 {
+        padding: 0;
+    }
+
+    .user {
+        padding: 0;
+        background-color: transparent;
+        h3 {
+            font-size: 24px;
+        }
+        .user__number__stats {
+            margin-top: 10px;
+            i {
+                color: $qudos-blue;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .col-1.group__dropdown_section {
+        display: flex;
+        justify-content: flex-end;
+        .dropdown {
+           a {
+               background-color: transparent;
+               border: 0;
+           }
+           .dropdown-menu {
+            //    padding: 0;
+            .dropdown-item {
+                display: inline-block;
+                width: 100%;
+                padding: 4px 18px;
+            }
+           }
+        }
+    }
+}
+.group-description-body {
+    background-color: white;
+    padding: 0 1.5% 1.2rem 1.5%;
+    padding-top: 2rem;
+    p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,388 @@
+/** Glabal Stylings Settings **/
+.filter {
+    .nav-link {
+        color: $qudos-grey;
+    }
+
+    .nav-link.active {
+        font-weight: 600;
+
+        button {
+            color: $qudos-blue;
+        }
+    }
+
+    .nav {
+        li {
+            a {
+
+                &:hover,
+                &:focus,
+                &:active {
+                    background-color: transparent;
+                }
+
+                button {
+                    transition: none;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ul.col.nav {
+    li {
+        a {
+            font-size: 14px;
+            color: $qudos-grey;
+
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+
+    li {
+        a.active {
+            color: $qudos-blue;
+            font-weight: 600;
+        }
+
+        a#qn-create-groups-tab {
+            width: 30px;
+            height: 30px;
+            margin-left: 5vw;
+
+            i {
+                position: relative;
+                left: -4px;
+                top: -3px;
+            }
+        }
+    }
+
+    #qn-create-groups-li {
+        width: 1%;
+    }
+}
+
+.user {
+    .user__meta {
+        h3 {
+            margin-top: 1.2rem;
+        }
+
+        h3,
+        p {
+            margin-bottom: 5px;
+        }
+
+        .fa-heart {
+            top: 1px;
+            position: relative;
+            font-size: 16px;
+            color: #B62A11;
+            margin-right: 2px;
+        }
+
+        .fa-star {
+            font-size: 16px;
+            color: #458AC1;
+            margin-right: 1px;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+}
+
+/** Qudos Searchbar Stylings **/
+.qudosfaves__searchbar {
+    /* Styles for wrapping the search box */
+    width: 90%;
+    margin: 20px auto;
+
+    /* Bootstrap 4 text input with search icon */
+    .has-search {
+        .form-control {
+            height: 35px;
+            padding-left: 2.375rem;
+            border-radius: 20px;
+        }
+
+        .form-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            color: #aaa;
+        }
+
+        .form-control-hover-icon {
+            visibility: hidden;
+            position: absolute;
+            z-index: 4;
+            display: block;
+            text-align: end;
+
+            .filter-icon {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+#groups-network--create {
+    position: relative;
+    top: -75px;
+    z-index: 9;
+    /** Create Groups Stylings **/
+    .qn__create-groups {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        .qn__create-groups-head {
+            text-align: center;
+
+            .image-upload {
+                label {
+                    .fa-user-circle {
+                        font-size: 62px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .image-upload>input {
+                display: none;
+            }
+        }
+
+        .qn__create-groups-form {
+            font-size: 16px;
+
+            form {
+                text-align: center;
+                margin-top: 10px;
+
+                #qn-create-group-input {
+                    font-size: 16px;
+                    width: 50%;
+                    text-align: center;
+                    border-top-width: 0;
+                    border-left-width: 0;
+                    border-right-width: 0;
+                    margin: 0 auto;
+                    border-radius: 0;
+                    box-shadow: none;
+                }
+
+                ::-webkit-input-placeholder {
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                :-moz-placeholder {
+                    /* Firefox 18- */
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                ::-moz-placeholder {
+                    /* Firefox 19+ */
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                :-ms-input-placeholder {
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                label {
+                    margin-bottom: 0;
+                    color: $qudos-darkgrey;
+                    font-weight: 300;
+                }
+
+                .btn-toolbar {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .qudos-primary-btn {
+                        @include qudos-primary-button;
+                        padding-top: 6px;
+                        width: 240px;
+                        font-size: 16px;
+                    }
+
+                    .qudos-secondary-btn {
+                        @include qudos-tertiary-button;
+                        padding-top: 6px;
+                        width: 240px;
+                        font-size: 16px;
+                    }
+                }
+
+                .qudosfaves__searchbar {
+                    .form-control {
+                        font-size: 16px;
+                        padding-left: 3rem;
+                    }
+
+                    ::-webkit-input-placeholder {
+                        width: 40%;
+                        text-align: left;
+                        opacity: .3;
+                    }
+
+                    :-moz-placeholder {
+                        /* Firefox 18- */
+                        text-align: left;
+                        opacity: .3;
+                    }
+
+                    ::-moz-placeholder {
+                        /* Firefox 19+ */
+                        text-align: left;
+                        opacity: .3;
+                    }
+
+                    :-ms-input-placeholder {
+                        text-align: left;
+                        opacity: .3;
+                    }
+
+                    .form-control-feedback {
+                        margin-top: 30px;
+                        text-align: center;
+                        left: 35px;
+                    }
+
+                    .form-control-hover-icon {
+                        width: 26.5vw;
+                        top: 24px;
+                        text-align: end;
+                    }
+                }
+            }
+
+            .card {
+                margin-top: 2rem;
+                max-width: 420px;
+                min-width: 250px;
+
+                .list-group-item {
+                    padding: 1.5rem 1rem;
+                    border: 1px solid transparent;
+
+                    .list-left {
+                        float: left;
+
+                        p {
+                            margin-left: 10px;
+                            vertical-align: middle;
+                            display: inline;
+                        }
+                    }
+
+                    .list-right {
+                        margin-top: 2px;
+                        height: 100%;
+                        float: right;
+
+                        .checkbox {
+                            vertical-align: middle;
+
+                            input {
+                                display: none
+                            }
+
+                            background-color: #fff;
+                            display: inline-block;
+                            height: 28px;
+                            margin: 0 .25em;
+                            width: 28px;
+                            border-radius: 4px;
+                            border: 1px solid #ccc;
+
+                            span {
+                                display: block;
+                                height: 28px;
+                                position: relative;
+                                width: 28px;
+                                padding: 0;
+
+                                &:after {
+                                    -moz-transform: scaleX(-1) rotate(135deg);
+                                    -ms-transform: scaleX(-1) rotate(135deg);
+                                    -webkit-transform: scaleX(-1) rotate(135deg);
+                                    transform: scaleX(-1) rotate(135deg);
+                                    -moz-transform-origin: left top;
+                                    -ms-transform-origin: left top;
+                                    -webkit-transform-origin: left top;
+                                    transform-origin: left top;
+                                    border-right: 4px solid #fff;
+                                    border-top: 4px solid #fff;
+                                    content: '';
+                                    display: block;
+                                    height: 20px;
+                                    left: 3px;
+                                    position: absolute;
+                                    top: 15px;
+                                    width: 10px
+                                }
+
+                                &:hover:after {
+                                    border-color: #999
+                                }
+                            }
+                        }
+
+                        .checkbox input:checked+span:after {
+                            -webkit-animation: check .8s;
+                            -moz-animation: check .8s;
+                            -o-animation: check .8s;
+                            animation: check .8s;
+                            border-color: #555
+                        }
+
+                        .checkbox input:checked+.default:after {
+                            border-color: $qudos-blue;
+                        }
+                    }
+                }
+            }
+
+            @keyframes check {
+                0% {
+                    height: 0;
+                    width: 0;
+                }
+
+                25% {
+                    height: 0;
+                    width: 10px;
+                }
+
+                50% {
+                    height: 20px;
+                    width: 10px;
+                }
+            }
+        }
+    }
+}

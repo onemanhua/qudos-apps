@@ -1,0 +1,1633 @@
+border-radius(n)
+	-webkit-border-radius n
+	border-radius n
+
+box-shadow(args...)
+	-webkit-box-shadow args
+	box-shadow args
+
+transition(args...)
+	-webkit-transition args
+	-moz-transition args
+	transition args
+
+transform(args...)
+	-webkit-transform args
+	-moz-transform args
+	transform args
+
+flexbox(value)
+	if value == inline-flex
+		display -webkit-inline-flex
+		display -ms-inline-flexbox
+		display inline-flex
+	else if value == flex
+		display -webkit-flex
+		display -ms-flexbox
+		display flex
+
+flex(value)
+	-webkit-flex value
+	-ms-flex value
+	flex value
+
+flex-direction(value)
+	if value == row
+		-webkit-box-orient horizontal
+		-webkit-box-direction normal
+	else if value == column
+		-webkit-box-orient vertical
+		-webkit-box-direction normal
+	else if value == row-reverse
+		-webkit-box-orient horizontal
+		-webkit-box-direction reverse
+	else if value == column-reverse
+		-webkit-box-orient vertical
+		-webkit-box-direction reverse
+	-webkit-flex-direction value
+	-moz-box-direction value
+	-ms-flex-direction value
+	flex-direction value
+
+flex-wrap(value)
+	-webkit-flex-wrap value
+	-ms-flex-wrap value
+	flex-wrap value
+
+justify-content(value)
+	if value == start || value == end
+		-webkit-justify-content flex-+value
+		-ms-flex-pack value
+		justify-content flex-+value
+	else if value == center
+		-webkit-justify-content value
+		-ms-flex-pack value
+		justify-content value
+	else if value == space-between
+		-webkit-justify-content value
+		-ms-flex-pack justify
+		justify-content value
+	else if value == space-around
+		-webkit-justify-content value
+		-ms-flex-pack distribute
+		justify-content value
+
+align-items(value)
+	if value == start or value == end
+		-webkit-align-items flex-+value
+		-ms-flex-align value
+		align-items flex-+value
+	else
+		-webkit-align-items value
+		-ms-flex-align value
+		align-items value
+
+order(value)
+	-ms-flex-order value
+	-webkit-order value
+	order value
+
+$white = #fff
+$black = #000
+
+/*==============================
+	Common styles
+==============================*/
+html
+	-webkit-text-size-adjust 100%
+	-ms-text-size-adjust 100%
+html
+body
+	height 100%
+body
+	font-family 'Open Sans', sans-serif
+	font-weight 400
+	background-color #fbfbfb
+	-webkit-font-smoothing antialiased
+button
+	padding 0
+	border none
+	background-color transparent
+	transition(.4s ease)
+	cursor pointer
+	&:focus
+		outline none
+a
+	transition(.4s ease)
+	&:hover
+	&:active
+	&:focus
+		outline none
+		text-decoration none
+input
+textarea
+select
+	padding 0
+	margin 0
+	border-radius(0)
+	-webkit-appearance none
+	-moz-appearance none
+	appearance none
+	box-shadow(none)
+	&:focus
+		outline none
+ul
+	margin 0
+	padding 0
+	list-style none
+
+::-moz-selection
+	background $white
+	color $black
+	text-shadow none
+::selection
+	background $white
+	color $black
+	text-shadow none
+
+::-webkit-input-placeholder
+	color #8e8e8e
+	opacity 1
+::-moz-placeholder
+	color #8e8e8e
+	opacity 1
+:-moz-placeholder
+	color #8e8e8e
+	opacity 1
+:-ms-input-placeholder
+	color #8e8e8e
+	opacity 1
+	
+.visible-mobile
+	display block !important
+	@media (min-width: 1200px)
+		display none !important
+
+.hidden-mobile
+	display none !important
+	@media (min-width: 1200px)
+		display block !important
+
+.container
+	@media (min-width: 1300px)
+		max-width 1200px
+
+/*==============================
+	Header
+==============================*/
+.header
+	position fixed
+	top 0
+	left 0
+	width 100%
+	z-index 99
+	transition(.4s ease)
+	background-image linear-gradient(to right, #243249, #282828)
+	&__content
+		flexbox flex
+		flex-direction row
+		justify-content space-between
+		align-items center
+		height 88px
+	&__form
+		display none
+	&__nav
+		display block
+		position fixed
+		top 0
+		right 0
+		bottom 0
+		transition(.4s ease)
+		width 100%
+		background-color #fbfbfb
+		z-index 1
+		transform(translate3d(100%, 0, 0))
+		&--active
+			transform(translate3d(0, 0, 0))
+	&__nav-title
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items center
+		background-color $white
+		height 88px
+		font-size 24px
+		line-height 100%
+		color #555
+		padding 0 30px
+		box-shadow(0 3px 1px rgba(0,0,0,.05))
+		i
+			font-size 30px
+			width 60px
+			margin-top 3px
+	&__nav-list
+		padding 30px 30px 0
+		li
+			display block
+			margin-bottom 30px
+			a
+				flexbox flex
+				flex-direction row
+				justify-content start
+				align-items center
+				color #555
+				font-size 20px
+				height 30px
+			i
+				font-size 30px
+				width 60px
+			&:last-child
+				margin-bottom 0
+	&__timeline-mob
+		position absolute
+		right 65px
+		top 50%
+		margin-top -20px
+		img
+			width 40px
+			height 40px
+			border-radius(50%)
+	&__menu
+		position relative
+		width 29px
+		height 18px
+		display block
+		z-index 2
+		span
+			display block
+			position absolute
+			width 100%
+			height 2px
+			left 0
+			background-color $white
+			transition(.4s ease)
+			opacity 1
+			&:first-child
+				top 0
+			&:nth-child(2)
+				top 50%
+				margin-top -1px
+			&:last-child
+				top 100%
+				margin-top -2px
+		&--active
+			span
+				background-color #0f1423
+				&:first-child
+					transform(rotate(-45deg))
+					top 50%
+					margin-top -2px
+				&:nth-child(2)
+					opacity 0
+				&:last-child
+					transform(rotate(45deg))
+					top 50%
+	@media (min-width: 768px)
+		&__form
+			display block
+			width 190px
+			position relative
+			margin-right auto
+			margin-left 50px
+			input
+				width 100%
+				border none
+				border-radius(4px)
+				height 36px
+				padding 0 15px 0 60px
+				font-size 14px
+				color #333
+			&:before
+				content '\f002'
+				font-family "Font Awesome 5 Pro"
+				position absolute
+				display block
+				left 14px
+				top 50%
+				transform(translateY(-50%))
+				font-size 16px
+				color #8e8e8e
+				pointer-events none
+			&:after
+				content ''
+				position absolute
+				display block
+				height 18px
+				width 1px
+				background-color #d4d4d4
+				top 50%
+				margin-top -9px
+				left 42px
+				pointer-events none
+	@media (min-width: 992px)
+		&__form
+			margin-left 70px
+	@media (min-width: 1200px)
+		&__timeline-mob
+		&__menu
+			display none
+		&__nav
+			transform(translate3d(0, 0, 0))
+			position relative
+			top auto
+			right auto
+			bottom auto
+			width auto
+			background-color transparent
+		&__nav-title
+			display none
+		&__nav-list
+			padding 0
+			flexbox flex
+			flex-direction row
+			justify-content start
+			align-items center
+			li
+				margin-bottom 0
+				margin-right 30px
+				a
+					color #aaa
+					font-size 14px
+					i
+						width auto
+						margin-right 10px
+						font-size 22px
+					&:hover
+						color $white
+				&:last-child
+					margin-right 0
+		&__not-btn
+			position relative
+			margin-right 30px
+			height 30px
+			i
+				font-size 22px
+				color #aaa
+				transition(.4s ease)
+			span
+				position absolute
+				top -6px
+				right -10px
+				height 15px
+				width 15px
+				overflow hidden
+				background #21b7b7
+				color #fff
+				text-align center
+				border-radius 50%
+				font-size 9px
+				line-height 15px
+			&:hover
+				i
+					color $white
+		&__timeline-desk
+			margin-right 30px
+			img
+				width 40px
+				height 40px
+				border-radius(50%)
+		&__more
+			height 30px
+			i
+				font-size 22px
+				color #aaa
+				transition(.4s ease)
+			&:hover
+				i
+					color $white
+		&__more-menu
+			background-color $white
+			box-shadow(0 2px 10px -2px #cedae0)
+			padding 5px 0
+			float none
+			border-radius(0)
+			border none
+			width 158px
+			margin-left -133px
+			position absolute
+			margin-top 10px
+			&:before
+				content "\f0d8"
+				font-family "Font Awesome 5 Pro"
+				font-weight 900
+				position absolute
+				color white
+				top -12px
+				right 15px
+			a
+				flexbox flex
+				flex-direction row
+				justify-content start
+				align-items center
+				padding 10px 20px
+				color #333
+				font-size 14px
+				i
+					width 30px
+					text-align center
+					font-size 20px
+					margin-right 10px
+
+.notification-drop
+	padding 0 0 5px 0
+	float none
+	border-radius(0)
+	border none
+	width 280px
+	margin-left -132px
+	margin-top 34px
+	background-color $white
+	box-shadow(0 2px 10px -2px #cedae0)
+	&__header
+		background-color $white
+		padding 15px
+		position relative
+		flexbox flex
+		flex-direction row
+		justify-content center
+		align-items center
+		&:before
+			content ''
+			position absolute
+			top -8px
+			left 134px
+			height 15px
+			width 15px
+			transform(rotate(45deg))
+			background-color $white
+		span
+			&:first-child
+				color #747f8b
+				font-size 14px
+				font-weight 700
+				margin-right 10px
+			&:last-child
+				position static
+				height 25px
+				width 25px
+				line-height 24px
+				font-size 12px
+				color $white
+				overflow hidden
+				background #21b7b7
+				border-radius(50%)
+				font-weight 600
+				text-align center
+	&__body
+		width 280px
+		max-height 292px
+		background #e9f0f3
+		overflow-y auto
+		overflow-x hidden
+		
+.notification
+	padding 15px
+	border 0
+	border-style solid
+	border-bottom-width 1px
+	-moz-border-image -moz-linear-gradient(right, white, #cedae0, #cedae0, white) 1 20%
+	-o-border-image -o-linear-gradient(right, white, #cedae0, #cedae0, white) 1 20%
+	border-image linear-gradient(to right, white 0%, #cedae0 40%, #cedae0 60%, white 100%) 1 20%
+	flexbox flex
+	flex-direction row
+	justify-content start
+	align-items center
+	&__img
+		display block
+		width 32px
+		height 32px
+		overflow hidden
+		border-radius(50%)
+		img
+			width auto
+			height 32px
+	&__text
+		display block
+		margin-left 15px
+		width calc(100% - 47px)
+		color #747f8b
+		cursor pointer
+		font-size 14px
+		line-height 21px
+		span
+			font-weight 700
+		
+/*==============================
+	Footer
+==============================*/
+.footer
+	padding-top 30px
+	background url('../img/footer-background.jpg') repeat-x left bottom 70px
+	&__logo
+		margin-bottom 50px
+	&__title
+		font-size 18px
+		font-weight 600
+		margin-bottom 15px
+		color #333
+	&__text
+		margin-bottom 30px
+		p
+			color #7d7d7d
+			font-size 14px
+			line-height 21px
+			margin-bottom 10px
+			&:last-child
+				margin-bottom 0
+	&__app
+		margin-bottom 15px
+		display block
+		img
+			width auto
+			max-width 100%
+		&:last-child
+			margin-bottom 30px
+	&__list
+		flexbox flex
+		flex-direction column
+		justify-content start
+		align-items start
+		margin-bottom 30px
+		a
+			font-size 14px
+			color #7d7d7d
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+	&__social
+		flexbox flex
+		flex-direction row
+		justify-content space-between
+		align-items center
+		margin-top 30px
+		margin-bottom 30px
+	&__downside
+		flexbox flex
+		flex-direction row
+		justify-content space-between
+		align-items center
+		height 70px
+		div
+			flexbox flex
+			flex-direction row
+			justify-content space-between
+			align-items center
+			width 100%
+			&:nth-child(2)
+			&:last-child
+				display none
+	&__copyright
+		font-size 14px
+		color #7d7d7d
+	@media (min-width: 576px)
+		&__social
+			width 75%
+	@media (min-width: 768px)
+		&__text
+			margin-bottom 50px
+		&__app
+			&:last-child
+				margin-bottom 50px
+		&__list
+			margin-bottom 50px
+		&__social
+			margin-bottom 50px
+	@media (min-width: 992px)
+		padding-top 60px
+		&__downside
+			margin-top 280px
+			div
+				width auto
+				&:nth-child(2)
+				&:last-child
+					flexbox flex
+		&__copyright
+			margin-right 30px
+			&:last-child
+				margin-right 0
+		&__link
+			font-size 14px
+			color #7d7d7d
+			margin-right 30px
+			&:hover
+				color #7d7d7d
+			&:last-child
+				margin-right 0
+		&__social
+			width 100%
+	@media (min-width: 1200px)
+		&__downside
+			margin-top 260px
+
+/*==============================
+	BG
+==============================*/
+.blue-background
+	display none
+	@media (min-width: 992px)
+		position relative
+		margin-top 88px
+		display block
+		width 100%
+		background-color #1f8dc6
+		height 350px
+	
+/*==============================
+	Page
+==============================*/
+.page
+	overflow hidden
+	padding-bottom 50px
+	margin-top 88px
+	&__panel
+		padding 15px
+		background-color $white
+		&:last-child
+			padding-bottom 0
+			border-bottom 1px solid #ccc
+			.page__panel-body
+				border-bottom none
+	&__panel-title
+		flexbox flex
+		flex-direction row
+		justify-content space-between
+		align-items center
+		margin-bottom 20px
+		span
+			font-size 18px
+			font-weight 600
+			color #333
+		button
+			font-size 25px
+			color #333
+	&__panel-body
+		border-bottom 1px solid #ccc
+		padding-bottom 20px
+	&__edit
+		position absolute
+		right 0
+		top 15px
+		font-size 19px
+		color #333
+	&__sidebar
+		display none
+	@media (min-width: 992px)
+		overflow visible
+		width 100%
+		max-width 960px
+		padding-right 15px
+		padding-left 15px
+		margin-right auto
+		margin-left auto
+		padding-bottom 60px
+		&__panel
+			padding 40px
+			margin-bottom 30px
+			box-shadow(0 1px 1px rgba(0,0,0,.05))
+			border-radius(4px)
+			.page__panel-body
+				border-bottom none
+			&:last-child
+				margin-bottom 0
+				padding-bottom 40px
+		&__sidebar
+			display block
+			margin-top 40px
+		&__content
+			margin-top 40px
+		&--profile
+			margin-top 0
+	@media (min-width: 1200px)
+		max-width 1140px
+		&__sidebar
+			flex(0 0 20%)
+			max-width 20%
+		&__content
+			flex(0 0 60%)
+			max-width 60%
+		&__single-content
+			flex(0 0 80%)
+			max-width 80%
+	@media (min-width: 1300px)
+		max-width 1200px
+
+/*==============================
+	New post
+==============================*/
+.new-post
+	background-color $white
+	padding 15px
+	border-bottom 1px solid #eee
+	box-shadow(0 1px 1px rgba($black,.05))
+	&__wrap
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items center
+		position relative
+	&__avatar
+		border-radius(50%)
+		overflow hidden
+		margin-right 20px
+		img
+			width 40px
+			height 40px
+	&__actions
+		display none
+	&__input
+		width calc(100% - 130px)
+		height 40px
+		border 1px solid #ccc
+		font-size 14px
+		padding 0 10px
+		border-radius(4px)
+		color #333
+	&__send
+		flexbox flex
+		flex-direction row
+		justify-content center
+		align-items center
+		position absolute
+		right 0
+		top 50%
+		margin-top -20px
+		border-radius(4px)
+		height 40px
+		width 50px
+		color $white
+		background-color #1f8dc6
+		i
+			font-size 18px
+		span
+			display none
+	@media (min-width: 992px)
+		border-radius(4px)
+		padding 0
+		&__wrap
+			padding 15px 15px 30px
+		&__actions
+			flexbox flex
+			flex-direction row
+			justify-content start
+			align-items center
+			background-color #f5f5f5
+			padding 0 15px
+			height 54px
+		&__input
+			width calc(100% - 60px)
+			padding 0
+			border-radius(0)
+			border none
+		&__send
+			height 34px
+			width 80px
+			right 15px
+			top 100%
+			margin-top 10px
+			span
+				display block
+				font-size 14px
+				margin-left 5px
+			i
+				font-size 16px
+		&__file
+			position relative
+			display block
+			overflow hidden
+			margin-right 20px
+			label
+				flexbox flex
+				flex-direction row
+				justify-content start
+				align-items center
+				font-weight normal
+				width 100%
+				height 34px
+				cursor pointer
+				margin 0
+				padding 0
+				font-size 14px
+				color #aaa
+				i
+					margin-right 8px
+					font-size 17px
+			input
+				position absolute
+				opacity 0
+				z-index -1
+				width 0
+				height 0
+				left -100px
+				top -100px
+
+/*==============================
+	Mob filter
+==============================*/
+.mob-filter
+	flexbox flex
+	flex-direction row
+	justify-content space-between
+	align-items start
+	flex-wrap wrap
+	&__results
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items center
+		font-size 14px
+		color #939393
+		line-height 24px
+		i
+			margin-right 5px
+			font-size 16px
+	&__btns
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items center
+		i
+			font-size 6px
+			color #dd4d4d
+			margin-right 10px
+		button
+			height 24px
+			margin-right 10px
+			color #1f8dc6
+			font-size 14px
+			&:last-child
+				margin-right 0
+	&__select
+		border-radius(2px)
+		width 100%
+		border 1px solid #ccc
+		font-size 14px
+		padding 0 15px
+		height 40px
+		transition(.4s ease)
+		cursor pointer
+		margin-top 15px
+		background url('../img/dropdown.png') no-repeat center right 20px $white
+		background-size 10px auto
+		&:focus
+			border-color #1f8dc6
+	@media (min-width: 992px)
+		display none
+
+/*==============================
+	Filter
+==============================*/
+.filter
+	display none
+	@media (min-width: 992px)
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items center
+		background-color $white
+		margin-bottom 30px
+		box-shadow(0 1px 1px rgba(0,0,0,.05))
+		border-radius(4px)
+		overflow hidden
+		button
+			height 60px
+			font-size 14px
+			color #939393
+			padding 0 15px
+			&.active
+				color #333
+				cursor default
+				&:hover
+					background-color transparent
+			&:hover
+				background-color #eeeeee
+	@media (min-width: 1200px)
+		button
+			padding 0 20px		
+
+/*==============================
+	Results
+==============================*/
+.results
+	&__title
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items center
+		color #333
+		font-size 16px
+		margin-bottom 20px
+		i
+			margin-right 10px
+			font-size 18px
+		a
+			flexbox flex
+			flex-direction row
+			justify-content center
+			align-items center
+			margin-left auto
+			font-size 14px
+			color #939393
+			i
+				font-size 18px
+				margin-right 0
+				margin-left 10px
+			&:hover
+				color #5db4dc
+		&--first
+			display none
+			color #1f8dc6
+	&__more
+		width 140px
+		height 40px
+		border-radius(2px)
+		margin 20px auto 40px
+		font-size 14px
+		border 1px solid #d2d2d2
+		color #d2d2d2
+		display block
+	&__content
+		&--modal
+			position relative
+			padding-bottom 30px
+	&__close
+		position absolute
+		display block
+		top 0
+		right 0
+		i
+			color #939393
+			font-size 24px
+	@media (min-width: 992px)
+		padding 20px
+		padding-bottom 0 !important
+		&__title
+			font-size 18px
+			i
+				font-size 20px
+			&--first
+				flexbox flex
+		&__more
+			margin 20px auto 40px
+	@media (min-width: 1200px)
+		padding 20px 25px
+		.col-xl-6
+			padding-right 10px
+			padding-left 10px
+		
+/*==============================
+	User
+==============================*/
+.user
+	background-color #f8f8f8
+	padding 20px
+	flexbox flex
+	flex-direction row
+	justify-content start
+	align-items start
+	flex-wrap wrap
+	margin-bottom 20px
+	border-radius(2px)
+	&__img
+		border-radius(6px)
+		overflow hidden
+		margin-right 20px
+		img
+			width 100px
+			height 100%
+	&__meta
+		width calc(100% - 120px)
+		h3
+			font-size 16px
+			color #333
+			font-weight 600
+			margin-bottom 10px
+		p
+			font-size 14px
+			color #7a7a7a
+			margin-bottom 0
+	&__actions
+		width 100%
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items center
+		margin-top 20px
+		a
+			flexbox flex
+			flex-direction row
+			justify-content center
+			align-items center
+			height 34px
+			width 120px
+			border-radius(2px)
+			font-size 14px
+			margin-right 20px
+			&:first-child
+				background-color #1f8dc6
+				color $white
+			&:nth-child(2)
+				border 1px solid #ddd
+				background-color $white
+				color #333
+	
+/*==============================
+	Summary
+==============================*/
+.summary
+	flexbox flex
+	flex-direction column
+	justify-content start
+	align-items center
+	border-bottom 1px solid #eee
+	box-shadow(0 1px 1px rgba($black,.05))
+	padding 0 15px 15px
+	margin-bottom 40px
+	background-color $white
+	border-radius(4px)
+	margin-top 40px
+	&__avatar
+		border-radius(50%)
+		overflow hidden
+		margin-top -40px
+		margin-bottom 20px
+		img
+			width 80px
+			height 80px
+	&__title
+		display block
+		text-align center
+		font-size 18px
+		font-weight 600
+		color #333
+		margin-bottom 5px
+	&__profile
+		font-size 14px
+	&__stat
+		margin 20px 0
+		flexbox flex
+		flex-direction column
+		justify-content center
+		align-items center
+		position relative
+		&:before
+			content ''
+			position absolute
+			display block
+			width 50px
+			height 1px
+			background-color #eee
+			bottom -21px
+			left 50%
+			margin-left -25px
+		span
+			font-size 26px
+			font-weight 600
+			color #333
+		p
+			margin 0
+			font-size 14px
+			color #aaa
+		&:last-child
+			&:before
+				display none
+
+/*==============================
+	Search
+==============================*/
+.search-box
+	padding 15px
+	border-bottom 1px solid #eee
+	box-shadow(0 1px 1px rgba($black,.05))
+	margin-bottom 40px
+	background-color $white
+	border-radius(4px)
+	&__title
+		display block
+		font-size 18px
+		font-weight 600
+		color #333
+		margin-bottom 15px
+	&__group
+		display block
+		position relative
+		margin-bottom 15px
+		label
+			display block
+			font-size 14px
+			color #939393
+			font-weight normal
+			margin-bottom 10px
+		input
+		select
+			border-radius(2px)
+			width 100%
+			border 1px solid #ccc
+			font-size 14px
+			padding 0 10px
+			height 34px
+			transition(.4s ease)
+			&:focus
+				border-color #1f8dc6
+		select
+			cursor pointer
+	&__btn
+		height 34px
+		font-size 14px
+		width 100%
+		color $white
+		border-radius(2px)
+		background-color #1f8dc6
+		margin-top 15px	
+	
+/*==============================
+	Profile
+==============================*/
+.personal
+	margin-bottom 30px
+	&:last-child
+		margin-bottom 0
+	&__title
+		font-size 14px
+		color #7a7a7a
+		font-weight 600
+		margin-bottom 10px
+	&__label
+		font-size 14px
+		color #7a7a7a
+		margin-top 5px
+
+/*==============================
+	Education
+==============================*/
+.education
+	background-color #f8f8f8
+	padding 0 20px
+	&__history
+		border-bottom 1px solid #ddd
+		padding 20px 0
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items start
+		position relative
+		&:last-child
+			border-bottom none
+	&__info
+		flexbox flex
+		flex-direction column
+		justify-content start
+		align-items start
+		margin-left 20px
+		span
+			font-size 14px
+			color #333
+			font-weight 600
+			margin-bottom 5px
+		p
+			font-size 14px
+			color #7a7a7a
+			margin-bottom 0
+
+/*==============================
+	Experience
+==============================*/
+.experience
+	&__wrap
+		border-bottom 1px solid #ddd
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items start
+		padding-bottom 20px
+		margin-bottom 20px
+		width auto
+	&__company
+		padding 15px
+		position relative
+		background-color #f8f8f8
+		margin-bottom 10px
+		&:last-child
+			border-bottom none
+			margin-bottom 0
+	&__info
+		flexbox flex
+		flex-direction column
+		justify-content start
+		align-items start
+		margin-left 20px
+		span
+			font-size 14px
+			color #333
+			font-weight 600
+			margin-bottom 5px
+		p
+			font-size 14px
+			color #7a7a7a
+			margin-bottom 0
+	&__text
+		font-size 14px
+		line-height 21px
+		color #aaa
+	.page__edit
+		right 20px
+
+/*==============================
+	About
+==============================*/
+.about
+	position relative
+	padding-top 0
+	&__label
+		font-size 16px
+		color #333
+		margin-bottom 5px
+		font-weight 700
+	&__text
+		color #7a7a7a
+		font-size 14px
+		line-height 200%
+	&__head
+		padding 20px 0
+		flexbox flex
+		flex-direction row
+		justify-content start
+		align-items start
+		position relative
+		background-color #f8f8f8
+		position relative
+		margin-bottom 20px
+		flex-wrap wrap
+		&:before
+		&:after
+			content ''
+			position absolute
+			display block
+			top 0
+			background-color #f8f8f8
+			width 15px
+			bottom 0
+		&:before
+			right 100%
+		&:after
+			left 100%
+		.personal
+			width 100%
+			margin-top 15px
+			margin-bottom 20px
+	&__img
+		width 100px
+		height 100px
+		border-radius(4px)
+		overflow hidden
+		img
+			width 100%
+			height 100%
+	&__info
+		flexbox flex
+		flex-direction column
+		justify-content start
+		align-items start
+		margin-left 20px
+		h2
+			font-size 24px
+			font-weight 600
+			color #333
+		span
+			color #7a7a7a
+			font-size 14px
+			margin-top 5px
+		a
+			display none
+			flex-direction row
+			justify-content start
+			align-items center
+			font-size 14px
+			margin-top 5px
+			i
+				margin-right 5px
+	&__edit
+		position relative
+		display block
+		width 158px
+		height 34px
+		color $white
+		background-color #1f8dc6
+		font-size 14px
+		border-radius(4px)
+	@media (min-width: 992px)
+		margin-top -90px
+		&__head
+			background-color $white
+			border-bottom 1px solid #ddd
+			padding 40px 0
+			margin-bottom 40px
+			&:before
+			&:after
+			.personal
+				display none
+		&__edit
+			position absolute
+			top 40px
+			right 0
+		&__info
+			a
+				flexbox flex
+			
+/*==============================
+	Sign
+==============================*/
+.sign
+	display block
+	padding 45px 0
+	margin-top 88px
+	background url("../img/pattern.png") repeat center #fff
+	&__content
+		background-color #fff
+		box-shadow(0 3px 7px 0.3px rgba(0,0,0,0.05))
+		border-radius(10px)
+		padding 25px 15px
+		position relative
+	&__text
+		font-size 14px
+		line-height 21px
+		color #333
+	@media (min-width: 480px)
+		&__content
+			padding 45px 35px
+	@media (min-width: 992px)
+		&__content
+			padding 45px 60px
+	@media (min-width: 1200px)
+		padding 70px 0
+		&__content
+			padding 60px 90px
+
+.popup-main-content
+	position relative
+	width 100%
+	overflow hidden
+	h3
+		font-size 32px
+		margin 0 0 10px 0
+		padding 0 0 20px 0
+		position relative
+		width 100%
+		background url('../img/bg-h3.jpg') bottom left no-repeat
+	label
+		position relative
+		float left
+		width 100%
+		font-weight normal
+		font-size 14px
+		color #6b6b6b
+	a:not([href]):not([tabindex])
+		color $white
+	input
+		position relative
+		width 100%
+		padding 15px 20px 15px 55px
+		border 1px solid #e7e7e7
+		border-radius(5px)
+		margin-bottom 20px
+		color #6b6b6b
+		font-size 16px
+		&.mobile
+			padding-left 55px !important
+		&.user-input
+			background url('../img/user.png') left 20px center no-repeat
+		&.password
+			background url('../img/key.png') left 20px center no-repeat
+		&.email-add
+			background url('../img/mail.png') left 20px center no-repeat
+		&.zip
+			background url('../img/spot.png') left 20px center no-repeat
+	.submit
+		position relative
+		float left
+		width 80%
+		background #1f8dc6
+		border-radius(5px)
+		text-align center
+		color #fff
+		padding 15px 0 15px 0
+	.but-next p a:not([href]):not([tabindex])
+	.right-align a:not([href]):not([tabindex])
+	.a-color a:not([href]):not([tabindex])
+		color #626262
+		font-weight bold
+
+.intl-tel-input.allow-dropdown .flag-container,
+.intl-tel-input.separate-dial-code .flag-container
+	left 10px !important
+
+.intl-tel-input
+	width 100%
+
+.row-forget-pass
+	position relative
+	float left
+	width 100%
+	margin 20px 0px 0px 0px
+	a
+		color #626262
+		
+.row-forget-pass .left-align,
+.row-forget-pass .right-align
+	position relative
+	float left
+	width 40%
+
+.row-forget-pass .right-align
+	text-align right
+
+.modal-content
+	position relative
+	float left
+
+.row-input
+	position relative
+	float left
+	width 100%
+	margin 0px 0px 0px 0px !important
+
+ul.signup-step
+	width 100%
+	text-align center
+	position relative
+	float left
+	margin 20px 0 25px 0
+	li
+		float left
+		margin 0 7px 0 0
+		a
+			width 7px
+			height 7px
+			border-radius 50%
+			background #c2c2c2
+			display inline-block
+			float left
+		&.active
+			a
+				background #000
+
+.select-state
+	width 100%
+	position relative
+	float left
+	padding 15px 0px 15px 40px
+	margin-bottom 20px
+	border 1px solid #e7e7e7
+	border-radius 5px
+	background url('../img/dropdown.png') right 20px top 24px no-repeat
+
+.select-state-spot
+	background url('../img/spot.png') left top no-repeat
+	position absolute
+	left 35px
+	top 49px
+	width 13px
+	height 17px
+
+.hidden
+	display none
+
+select.vehicle
+	width 100%
+	position relative
+	float left
+	padding 15px 0px 15px 55px
+	margin-bottom 20px
+	border 1px solid #e7e7e7
+	border-radius 5px
+	background url('../img/dropdown.png') right 20px top 23px no-repeat
+	color #6b6b6b
+
+.select-car
+	background url('../img/car.png') left top no-repeat
+	position absolute
+	left 30px
+	top 46px
+	width 19px
+	height 17px
+
+.checkmark
+	position absolute
+	top 0
+	left 0
+	height 35px
+	width 35px
+	border 2px solid #dbdbdb
+	border-radius(50%)
+
+.checkmark1
+	position absolute
+	top 8px
+	left 0
+	height 25px
+	width 25px
+	border 1px solid #dbdbdb
+	border-radius(5px)
+
+.checkmark:after,
+.checkmark1:after
+	content ""
+	position absolute
+	display none
+
+.checkbox-custom
+	display block
+	position relative
+	padding 8px 0 0 45px
+	margin-bottom 12px
+	cursor pointer
+	font-size 22px
+	-webkit-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
+	input
+		position absolute
+		opacity 0
+		cursor pointer
+	input:checked ~ .checkmark,
+	input:checked ~ .checkmark1
+		background-color #61da80
+		border-color #61da80
+	input:checked ~ .checkmark:after,
+	input:checked ~ .checkmark1:after
+		display block
+	.checkmark:after,
+	.checkmark1:after
+		left 12px
+		top 7px
+		width 7px
+		height 15px
+		border solid white
+		border-width 0 3px 3px 0
+		transform(rotate(45deg))
+	.checkmark1:after
+		left 7px
+		top 3px
+
+.new-custom
+	color #a8a8a8
+	font-size 14px
+	padding 4px 0px 0px 35px
+
+.modal-content
+	z-index 999
+	width 100%
+
+.but-next
+	margin 30px 0 0 0
+	p
+		position relative
+		float left
+		width 100%
+		margin 20px 0 20px 0
+
+.top-margin,
+.a-color a
+	margin-top 20px !important
+	color #626262
+
+.phone-verify
+	font-size 26px
+	padding-left 30px
+
+.submit-veri,
+.submit-login
+	position relative
+	float left
+	width 100%
+	background #1f8dc6
+	border-radius 5px
+	text-align center
+	color #fff
+	padding 15px 0px 15px 0px
+
+.submit-veri
+	background none
+	color #626262
+	border 1px solid #e7e7e7
+
+p.top-margin
+	position relative
+	float left
+	width 100%
+	clear both
+
+.but-next a
+	color #626262
+
+.clear
+	clear both
+
+#signup-3 .file-input
+	border 1px solid #e7e7e7
+
+.small-show
+	display none
+
+.black-col
+	color #626262

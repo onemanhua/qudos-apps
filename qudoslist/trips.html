@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+	<!--CSS-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.all.css">
+	<link rel="stylesheet" href="css/intlTelInput.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Custom CSS -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/custom.min.css">
+	<title>QudosList™</title>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__content">
+						<a href="#" class="header__logo">
+							<img src="img/logo--white.png" alt="">
+						</a>
+
+						<form action="#" class="header__form">
+							<input type="text" placeholder="Search">
+						</form>
+
+						<nav class="header__nav">
+							<div class="header__nav-title">
+								<i class="fal fa-long-arrow-left"></i>
+								Menu
+							</div>
+
+							<ul class="header__nav-list">
+								<li>
+									<a href="home.html">
+										<i class="fal fa-home"></i>
+										<span>Home</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="qudos.html">
+										<i class="fal fa-bullseye"></i>
+										<span>My Qudos</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="network.html">
+										<i class="fal fa-user-friends"></i>
+										<span>Network</span>
+									</a>
+								</li>
+
+								<li class="visible-mobile">
+									<a href="profile.html">
+										<i class="fal fa-user"></i>
+										<span>Profile</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="fal fa-comments-alt"></i>
+										<span class="visible-mobile">Messaging</span>
+									</a>
+								</li>
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fa-bell"></i>
+										<span>Notification</span>
+									</a>
+								</li>
+
+								<div class="hidden-mobile dropdown">
+									<button class="header__not-btn" type="button" id="dropdownMenuButton"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span>12</span>
+										<i class="fal fa-bell"></i>
+									</button>
+
+									<div class="notification-drop dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<div class="notification-drop__header">
+											<span>Notifications</span>
+											<span>349</span>
+										</div>
+
+										<div class="notification-drop__body">
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="hidden-mobile">
+									<a href="#" class="header__timeline-desk">
+										<img src="img/avatar.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="hidden-mobile dropdown">
+									<button class="header__more" type="button" id="dropdownMenuButton2"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-caret-down"></i>
+									</button>
+
+									<div class="header__more-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+										<a href="profile.html">
+											<i class="fal fa-user"></i>
+											<span>Profile</span>
+										</a>
+										<a href="#">
+											<i class="fal fal fa-power-off"></i>
+											<span>Sign Out</span>
+										</a>
+									</div>
+								</div>
+
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fal fa-power-off"></i>
+										<span class="visible-mobile">Sign Out</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<a href="#" class="header__timeline-mob mr-3">
+							<img src="img/avatar.jpg" alt="">
+						</a>
+
+						<button class="header__menu d-none" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="page">
+		<div class="row">
+			<div class="col-12 col-lg-3 col-xl-2 page__sidebar">
+				<div class="summary">
+					<div class="summary__avatar">
+						<img src="img/avatar.jpg" alt="">
+					</div>
+
+					<div class="summary__title">Heather Berry</div>
+
+					<a href="#" class="summary__profile">My Profile</a>
+
+					<div class="summary__stat">
+						<span>254</span>
+						<p>Followers</p>
+					</div>
+
+					<div class="summary__stat">
+						<span>800</span>
+						<p>Posts</p>
+					</div>
+
+					<div class="summary__stat">
+						<span>563</span>
+						<p>Likes</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-6 col-xl-8 page__content">
+				<div class="filter">
+					<button class="active">My QudosFave™</button>
+					<button>My Friends</button>
+					<button>My Groups</button>
+					<button>My Pages</button>
+					<button>Trip History</button>
+				</div>
+
+				<div class="page__panel mob-filter">
+					<span class="mob-filter__results d-none">
+						<i class="fa fa-users"></i> Search Results
+					</span>
+
+					<div class="mob-filter__btns">
+						<button type="button">Clear All</button>
+						<i class="fa fa-circle"></i>
+						<button type="button">Filter</button>
+					</div>
+
+					<select class="mob-filter__select">
+						<option value="driver_list">My QudosFave™</option>
+						<option value="people">My Friends</option>
+						<option value="group">My Groups</option>
+						<option value="page">My Pages</option>
+						<option value="trip_history">Trip History</option>
+					</select>
+				</div>
+
+				<div class="page__panel results">
+					<div class="trips">
+						<div class="trips__nav">
+							<div class="trips__nav-desk">
+								<button class="trips__btn" type="button">Schedude <i class="fas fa-car"></i></button>
+
+								<button class="trips__btn active" type="button">Completed <i
+										class="fas fa-car"></i></button>
+
+								<button class="trips__btn" type="button">Cancelled <i class="fas fa-car"></i></button>
+							</div>
+
+							<button class="trips__csv" type="button">Export CSV</button>
+
+							<button class="trips__next" type="button">Next</button>
+						</div>
+
+						<div class="table-responsive">
+							<table class="trips__table">
+								<thead>
+									<tr>
+										<th><i class="fas fa-ellipsis-v"></i>Sessions</th>
+										<th><i class="fas fa-map-marker-alt"></i>Pickup</th>
+										<th><i class="fas fa-user-circle"></i>User</th>
+										<th><i class="fas fa-car"></i>Car</th>
+										<th><i class="fas fa-ellipsis-h"></i>Status</th>
+										<th><i class="fal fa-credit-card"></i>Payment Method</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>3252</td>
+										<td>Jan 17 2019<br> 04:35 PM</td>
+										<td>Heather Berry</td>
+										<td>QS</td>
+										<td>Completed</td>
+										<td><button type="button" data-toggle="collapse" data-target="#collapseExample1"
+												aria-expanded="false" aria-controls="collapseExample1">36.62 paid via
+												Card <i class="fas fa-sort-down"></i></button></td>
+									</tr>
+
+									<tr class="payment-wrap">
+										<td colspan="6">
+											<div class="payment collapse" id="collapseExample1">
+												<div class="row">
+													<div class="col-12 col-md-6">
+														<div class="payment__title">
+															<span class="payment__fare"><i class="fas fa-bookmark"></i>
+																Fare</span>
+															<span class="payment__price">$85.72</span>
+															<div class="payment__date">Jan 17 2019 04:35 PM</div>
+														</div>
+
+														<div class="payment__details">
+															<div class="payment__details-title"><i
+																	class="fas fa-car"></i> Trip details</div>
+															<ul class="payment__list">
+																<li class="true">
+																	<b>04:53 PM</b>
+																	<span>19-80 Steinway St, Astoria, NY 11105,
+																		USA</span>
+																</li>
+																<li>
+																	<b>04:53 PM</b>
+																	<span>19-80 Steinway St, Astoria, NY 11105,
+																		USA</span>
+																</li>
+															</ul>
+															<div class="payment__details-title"><i
+																	class="fas fa-user-circle"></i> Driver</div>
+															<span class="payment__driver">Tom Cruizz, Toyota Camry
+																QS</span>
+
+															<button class="payment__btn" type="button">Resend
+																Receipt</button>
+														</div>
+													</div>
+
+													<div class="col-12 col-md-6">
+														<iframe class="payment__map" width="100%"
+															src="https://maps.google.com/maps?width=100%&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+															frameborder="0" scrolling="no" marginheight="0"
+															marginwidth="0"></iframe>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>3252</td>
+										<td>Jan 17 2019<br> 04:35 PM</td>
+										<td>Heather Berry</td>
+										<td>QS</td>
+										<td>Completed</td>
+										<td><button type="button" data-toggle="collapse" data-target="#collapseExample2"
+												aria-expanded="false" aria-controls="collapseExample2">36.62 paid via
+												Card <i class="fas fa-sort-down"></i></button></td>
+									</tr>
+
+									<tr class="payment-wrap">
+										<td colspan="6">
+											<div class="payment collapse" id="collapseExample2">
+												<div class="row">
+													<div class="col-12 col-md-6">
+														<div class="payment__title">
+															<span class="payment__fare"><i class="fas fa-bookmark"></i>
+																Fare</span>
+															<span class="payment__price">$85.72</span>
+															<div class="payment__date">Jan 17 2019 04:35 PM</div>
+														</div>
+
+														<div class="payment__details">
+															<div class="payment__details-title"><i
+																	class="fas fa-car"></i> Trip details</div>
+															<ul class="payment__list">
+																<li class="true">
+																	<b>04:53 PM</b>
+																	<span>19-80 Steinway St, Astoria, NY 11105,
+																		USA</span>
+																</li>
+																<li>
+																	<b>04:53 PM</b>
+																	<span>19-80 Steinway St, Astoria, NY 11105,
+																		USA</span>
+																</li>
+															</ul>
+															<div class="payment__details-title"><i
+																	class="fas fa-user-circle"></i> Driver</div>
+															<span class="payment__driver">Tom Cruizz, Toyota Camry
+																QS</span>
+
+															<button class="payment__btn" type="button">Resend
+																Receipt</button>
+														</div>
+													</div>
+
+													<div class="col-12 col-md-6">
+														<iframe class="payment__map" width="100%"
+															src="https://maps.google.com/maps?width=100%&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+															frameborder="0" scrolling="no" marginheight="0"
+															marginwidth="0"></iframe>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>3252</td>
+										<td>Jan 17 2019<br> 04:35 PM</td>
+										<td>Heather Berry</td>
+										<td>QS</td>
+										<td>Completed</td>
+										<td><button type="button" data-toggle="collapse" data-target="#collapseExample3"
+												aria-expanded="false" aria-controls="collapseExample3">36.62 paid via
+												Card <i class="fas fa-sort-down"></i></button></td>
+									</tr>
+
+									<tr class="payment-wrap">
+										<td colspan="6">
+											<div class="payment collapse" id="collapseExample3">
+												<div class="row">
+													<div class="col-12 col-md-6">
+														<div class="payment__title">
+															<span class="payment__fare"><i class="fas fa-bookmark"></i>
+																Fare</span>
+															<span class="payment__price">$85.72</span>
+															<div class="payment__date">Jan 17 2019 04:35 PM</div>
+														</div>
+
+														<div class="payment__details">
+															<div class="payment__details-title"><i
+																	class="fas fa-car"></i> Trip details</div>
+															<ul class="payment__list">
+																<li class="true">
+																	<b>04:53 PM</b>
+																	<span>19-80 Steinway St, Astoria, NY 11105,
+																		USA</span>
+																</li>
+																<li>
+																	<b>04:53 PM</b>
+																	<span>19-80 Steinway St, Astoria, NY 11105,
+																		USA</span>
+																</li>
+															</ul>
+															<div class="payment__details-title"><i
+																	class="fas fa-user-circle"></i> Driver</div>
+															<span class="payment__driver">Tom Cruizz, Toyota Camry
+																QS</span>
+
+															<button class="payment__btn" type="button">Resend
+																Receipt</button>
+														</div>
+													</div>
+
+													<div class="col-12 col-md-6">
+														<iframe class="payment__map" width="100%"
+															src="https://maps.google.com/maps?width=100%&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+															frameborder="0" scrolling="no" marginheight="0"
+															marginwidth="0"></iframe>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-3 col-xl-2 page__sidebar">
+				<div class="search-box">
+					<div class="search-box__title">Looking for:</div>
+
+					<div class="search-box__group">
+						<label for="">Vehicle Make</label>
+						<input type="text" placeholder="Make">
+					</div>
+
+					<div class="search-box__group">
+						<label for="">Car Model</label>
+						<input type="text" placeholder="Model">
+					</div>
+
+					<div class="search-box__group">
+						<label for="">Seating Capacity</label>
+						<select>
+							<option value="">Choose number of seats</option>
+							<option value="4">4</option>
+							<option value="6">6</option>
+							<option value="8">8</option>
+						</select>
+					</div>
+
+					<div class="search-box__group">
+						<label for="">City</label>
+						<select>
+							<option value=""></option>
+							<option value="New York">New York</option>
+							<option value="New Jersey">New Jersey</option>
+							<option value="Connecticut">Connecticut</option>
+						</select>
+					</div>
+
+					<div class="search-box__group">
+						<label for="">Zip Code</label>
+						<input type="text" placeholder="Enter Zip Code">
+					</div>
+
+					<button class="search-box__btn" type="button">Search</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<svg class="QL_LOGO_ROCKWELL footer__logo"></svg>
+				</div>
+
+				<div class="col-12 col-lg-5">
+					<div class="row">
+						<div class="col-6 col-lg-7">
+							<h4 class="footer__title">Reach us</h4>
+							<div class="footer__text">
+								<p>1969, Steinway street, long Island City, NewYork. NY 1105</p>
+								<p>(718)-360-5010</p>
+								<p>support@Qudos.us</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-5">
+							<h4 class="footer__title">Our Apps</h4>
+							<a href="#" class="footer__app">
+								<img src="img/app-store.png" alt="">
+							</a>
+							<a href="#" class="footer__app">
+								<img src="img/google-play.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="row">
+						<div class="col-6">
+							<h4 class="footer__title">About</h4>
+							<div class="footer__list">
+								<a href="#">Company</a>
+								<a href="#">Press</a>
+								<a href="#">Terms & Conditions</a>
+								<a href="#">Privacy Policy</a>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<h4 class="footer__title">Ride</h4>
+							<div class="footer__list">
+								<a href="#">Drive</a>
+								<a href="#">Cities</a>
+								<a href="#">Help</a>
+								<a href="#">Safety</a>
+								<a href="#">Login</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-3">
+					<h4 class="footer__title">Connect</h4>
+					<div class="footer__social">
+						<a href="#"><img src="img/facebook.png" alt=""></a>
+						<a href="#"><img src="img/twitter.png" alt=""></a>
+						<a href="#"><img src="img/linkedin1.png" alt=""></a>
+						<a href="#"><img src="img/instagram1.png" alt=""></a>
+					</div>
+				</div>
+
+				<div class="col hidden-mobile">
+					<div class="footer__downside">
+						<div>
+							<span class="footer__copyright">All Rights Reserved</span>
+							<span class="footer__copyright">© CopyRighted 2018</span>
+						</div>
+
+						<div>
+							<span class="footer__copyright">www.rideQudos.com</span>
+						</div>
+
+						<div>
+							<a href="#" class="footer__link">Terms and Conditions</a>
+							<a href="#" class="footer__link">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="visible-mobile footer__copyright text-center" id="mobile__footer__copyright">© Copyrights 2019</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

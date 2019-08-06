@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap-v3.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.all.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Custom CSS -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/custom.min.css">
+    <title>QudosList™</title>
+    <!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+    <!-- remove this if you use Modernizr -->
+    <script>
+        (function (e, t, n) {
+            var r = e.querySelectorAll("html")[0];
+            r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
+        })(document, window, 0);
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__content">
+                        <a href="home.html" class="header__logo">
+                            <img src="img/logo--white.png" alt="">
+                        </a>
+
+                        <form action="#" class="header__form">
+                            <input type="text" placeholder="Search">
+                        </form>
+
+                        <nav class="header__nav">
+                            <div class="header__nav-title">
+                                <i class="fal fa-long-arrow-left"></i>
+                                Menu
+                            </div>
+
+                            <ul class="header__nav-list">
+                                <li>
+                                    <a href="home.html">
+                                        <i class="fal fa-home"></i>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="qudos.html">
+                                        <i class="fal fa-bullseye"></i>
+                                        <span>My Qudos</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="network.html">
+                                        <i class="fal fa-user-friends"></i>
+                                        <span>Network</span>
+                                    </a>
+                                </li>
+
+                                <li class="visible-mobile">
+                                    <a href="profile.html">
+                                        <i class="fal fa-user"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fal fa-comments-alt"></i>
+                                        <span class="visible-mobile">Messaging</span>
+                                    </a>
+                                </li>
+
+                                <li class="visible-mobile">
+                                    <a href="#">
+                                        <i class="fal fa-bell"></i>
+                                        <span>Notification</span>
+                                    </a>
+                                </li>
+
+                                <div class="hidden-mobile dropdown">
+                                    <button class="header__not-btn" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span>12</span>
+                                        <i class="fal fa-bell"></i>
+                                    </button>
+
+                                    <div class="notification-drop dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="notification-drop__header">
+                                            <span>Notifications</span>
+                                            <span>349</span>
+                                        </div>
+
+                                        <div class="notification-drop__body">
+                                            <div class="notification">
+                                                <div class="notification__img">
+                                                    <img src="img/avatar.jpg" alt="">
+                                                </div>
+
+                                                <div class="notification__text">
+                                                    <span>Fauzan Khan</span> promoted your answer
+                                                </div>
+                                            </div>
+
+                                            <div class="notification">
+                                                <div class="notification__img">
+                                                    <img src="img/avatar.jpg" alt="">
+                                                </div>
+
+                                                <div class="notification__text">
+                                                    <span>Fauzan Khan</span> promoted your answer
+                                                </div>
+                                            </div>
+
+                                            <div class="notification">
+                                                <div class="notification__img">
+                                                    <img src="img/avatar.jpg" alt="">
+                                                </div>
+
+                                                <div class="notification__text">
+                                                    <span>Fauzan Khan</span> promoted your answer
+                                                </div>
+                                            </div>
+
+                                            <div class="notification">
+                                                <div class="notification__img">
+                                                    <img src="img/avatar.jpg" alt="">
+                                                </div>
+
+                                                <div class="notification__text">
+                                                    <span>Fauzan Khan</span> promoted your answer
+                                                </div>
+                                            </div>
+
+                                            <div class="notification">
+                                                <div class="notification__img">
+                                                    <img src="img/avatar.jpg" alt="">
+                                                </div>
+
+                                                <div class="notification__text">
+                                                    <span>Fauzan Khan</span> promoted your answer
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hidden-mobile">
+                                    <a href="#" class="header__timeline-desk">
+                                        <img src="img/avatar.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="hidden-mobile dropdown">
+                                    <button class="header__more" type="button" id="dropdownMenuButton2"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-caret-down"></i>
+                                    </button>
+
+                                    <div class="header__more-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <a href="profile.html">
+                                            <i class="fal fa-user"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fal fal fa-power-off"></i>
+                                            <span>Sign Out</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <li class="visible-mobile">
+                                    <a href="#">
+                                        <i class="fal fal fa-power-off"></i>
+                                        <span class="visible-mobile">Sign Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <a href="#" class="header__timeline-mob">
+                            <img src="img/avatar.jpg" alt="">
+                        </a>
+
+                        <button class="header__menu d-none" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+
+        <!-- Top Nav icon start -->
+        <div class="row m-0">
+            <div class="col-12 p-0">
+                <div id="body"></div>
+                <div class="top__nav d-flex justify-content-between" ng-show="mobileView && is_auth">
+                    <a href="home.html" ui-sref="home"><i class="fal fa-list-alt top__nav-icon"><span>10</span></i></a>
+                    <a href="#" class="active" ui-sref="network"><i
+                            class="fal fa-user-friends top__nav-icon"><span>99</span></i></a>
+                    <a href="messages.html"><i class="fal fa-comments-alt top__nav-icon"><span>12</span></i></a>
+                    <a href="notifications.html"><i class="fal fa-bell top__nav-icon"><span>11</span></i></a>
+                    <a href="settings.html" data-toggle="modal" data-target="#settingsModal"><i
+                            class="fal fa-cog top__nav-icon"></i></a>
+                </div>
+                <ui-view></ui-view>
+            </div>
+        </div>
+        <!-- Top Nav icon Close -->
+        <!-- Settings Modal start -->
+        <div class="modal" id="settingsModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="settingsModalCenterTitle">Settings Options</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="privacySettingsSelect">Account Privacy</label>
+                                <select class="form-control" id="privacySettings">
+                                    <option>Public (defautl)</option>
+                                    <option>Private</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="languageSettingsSelect">Language</label>
+                                <select class="form-control" id="languageSettings">
+                                    <option value="en">English (defautl)</option>
+                                    <option value="kr">Korean</option>
+                                    <option value="mr">Mandarin</option>
+                                    <option value="fr">French</option>
+                                    <option value="gm">German</option>
+                                    <option value="pht">Filipino (Tagalog)</option>
+                                    <option value="phb">Filipino (Bisaya)</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn qudos-primary-btn" data-dismiss="modal">Sign-out</button>
+                        <button type="button" class="btn qudos-tertiary-btn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Settings Modal start -->
+
+        <div class="row">
+            <div class="col-12 col-lg-3 col-xl-2 page__sidebar">
+                <div class="summary">
+                    <div class="summary__avatar">
+                        <img src="img/avatar.jpg" alt="">
+                    </div>
+
+                    <div class="summary__title">Heather Berry</div>
+
+                    <a href="#" class="summary__profile">My Profile</a>
+
+                    <div class="summary__stat">
+                        <span>254</span>
+                        <p>Followers</p>
+                    </div>
+
+                    <div class="summary__stat">
+                        <span>800</span>
+                        <p>Posts</p>
+                    </div>
+
+                    <div class="summary__stat">
+                        <span>563</span>
+                        <p>Likes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 col-xl-8 page__content">
+                <!-- Desktop filter search start -->
+                <div class="hidden-mobile filter">
+                    <a href="network.html"><button>QudosFave™<span>Drivers</span></button></a>
+                    <a href="network--people.html"><button>People</button></a>
+                    <a><button class="active">Groups</button></a>
+                    <a href="network--pages.html"><button>Pages</button></a>
+                </div><!-- Desktop filter search end -->
+                <!-- Mobile filter search start -->
+                <span class="visible-mobile">
+                    <div class="filter justify-content-between d-flex">
+                        <a href="network.html"><button>QudosFave™<span>Drivers</span></button></a>
+                        <a href="network--people.html"><button>People</button></a>
+                        <a><button class="active">Groups</button></a>
+                        <a href="network--pages.html"><button>Pages</button></a>
+                    </div>
+                </span><!-- Mobile filter search end -->
+                <div id="qn-groups">
+                    <div class="page__panel results">
+                        <section class="network__tabs">
+                            <div id="myGroup-networkTabContent">
+                                <div id="qn-create-groups" aria-labelledby="qn-create-groups">
+                                    <div class="results__content">
+                                        <section class="row qn__create-groups pb-0">
+                                            <div class="col-12 qn__create-groups-head">
+                                                <div class="image-upload">
+                                                    <label for="file-input">
+                                                        <svg class="blank-user-icon"></svg>
+                                                    </label>
+                                                    <input id="file-input" type="file" name="groupImage"
+                                                        accept="image/x-png,image/gif,image/jpeg" />
+                                                </div>
+                                            </div>
+                                            <div class="col-12 qn__create-groups-form">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="container text-center">
+                                                                <input type="text" class="form-control"
+                                                                    id="qn-create-group-input" placeholder="Group Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-10 offset-md-1 px-0">
+                                                            <!-- Qudos searchbar start -->
+                                                            <div class="qudosfaves__searchbar">
+                                                                <div class="form-group has-search">
+                                                                    <span
+                                                                        class="fa fa-search form-control-feedback"></span>
+                                                                    <input type="text" class="form-control pt-1"
+                                                                        placeholder="Search (Spanish, Toyota, etc...)">
+                                                                    <span class="form-control-hover-icon">
+                                                                        <a role="button" href="#">
+                                                                            <svg class="filter-icon"></svg>
+                                                                        </a>
+                                                                    </span>
+                                                                </div>
+                                                            </div><!-- Qudos searchbar end -->
+                                                        </div>
+                                                        <div class="col-md-10 offset-md-1 px-0">
+                                                            <div class="btn-toolbar justify-content-between">
+                                                                <a href="#" class="btn qudos-primary-btn">Create
+                                                                    Group</a>
+                                                                <a href="network--groups.html"
+                                                                    class="btn qudos-secondary-btn">Cancel</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="col-md-12 px-5 mt-3">
+                                                    <div class="card border-left-0 border-right-0 border-bottom-0">
+                                                        <ul class="list-group list-group-flush mt-3">
+                                                            <li class="list-group-item">
+                                                                <span class="list-left">
+                                                                    <img src="img/avatar.jpg" alt="user-image"
+                                                                        class="rounded-circle" width="32px"
+                                                                        height="32px">
+                                                                    <p>Username</p>
+                                                                </span>
+                                                                <span class="list-right">
+                                                                    <label class="checkbox">
+                                                                        <input type="checkbox" />
+                                                                        <span class="default"></span>
+                                                                    </label>
+                                                                </span>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <span class="list-left">
+                                                                    <img src="img/avatar.jpg" alt="user-image"
+                                                                        class="rounded-circle" width="32px"
+                                                                        height="32px">
+                                                                    <p>Username</p>
+                                                                </span>
+                                                                <span class="list-right">
+                                                                    <label class="checkbox">
+                                                                        <input type="checkbox" />
+                                                                        <span class="default"></span>
+                                                                    </label>
+                                                                </span>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <span class="list-left">
+                                                                    <img src="img/avatar.jpg" alt="user-image"
+                                                                        class="rounded-circle" width="32px"
+                                                                        height="32px">
+                                                                    <p>Username</p>
+                                                                </span>
+                                                                <span class="list-right">
+                                                                    <label class="checkbox">
+                                                                        <input type="checkbox" />
+                                                                        <span class="default"></span>
+                                                                    </label>
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <button class="results__more" type="button">Load
+                                                                More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 col-xl-2 page__sidebar">
+                <div class="search-box">
+                    <div class="search-box__title">Looking for:</div>
+
+                    <div class="search-box__group">
+                        <label for="">Group Name</label>
+                        <input type="text" placeholder=" ">
+                    </div>
+                    <button class="search-box__btn" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<svg class="QL_LOGO_ROCKWELL footer__logo"></svg>
+				</div>
+
+				<div class="col-12 col-lg-5">
+					<div class="row">
+						<div class="col-6 col-lg-7">
+							<h4 class="footer__title">Reach us</h4>
+							<div class="footer__text">
+								<p>1969, Steinway street, long Island City, NewYork. NY 1105</p>
+								<p>(718)-360-5010</p>
+								<p>support@Qudos.us</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-5">
+							<h4 class="footer__title">Our Apps</h4>
+							<a href="#" class="footer__app">
+								<img src="img/app-store.png" alt="">
+							</a>
+							<a href="#" class="footer__app">
+								<img src="img/google-play.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="row">
+						<div class="col-6">
+							<h4 class="footer__title">About</h4>
+							<div class="footer__list">
+								<a href="#">Company</a>
+								<a href="#">Press</a>
+								<a href="#">Terms & Conditions</a>
+								<a href="#">Privacy Policy</a>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<h4 class="footer__title">Ride</h4>
+							<div class="footer__list">
+								<a href="#">Drive</a>
+								<a href="#">Cities</a>
+								<a href="#">Help</a>
+								<a href="#">Safety</a>
+								<a href="#">Login</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-3">
+					<h4 class="footer__title">Connect</h4>
+					<div class="footer__social">
+						<a href="#"><img src="img/facebook.png" alt=""></a>
+						<a href="#"><img src="img/twitter.png" alt=""></a>
+						<a href="#"><img src="img/linkedin1.png" alt=""></a>
+						<a href="#"><img src="img/instagram1.png" alt=""></a>
+					</div>
+				</div>
+
+				<div class="col hidden-mobile">
+					<div class="footer__downside">
+						<div>
+							<span class="footer__copyright">All Rights Reserved</span>
+							<span class="footer__copyright">© CopyRighted 2018</span>
+						</div>
+
+						<div>
+							<span class="footer__copyright">www.rideQudos.com</span>
+						</div>
+
+						<div>
+							<a href="#" class="footer__link">Terms and Conditions</a>
+							<a href="#" class="footer__link">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="visible-mobile footer__copyright text-center" id="mobile__footer__copyright">© Copyrights 2019</div>
+	</footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

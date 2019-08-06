@@ -1,0 +1,210 @@
+@media (max-width: 1440px) {
+    #myPage-networkTabContent {
+        #qn-create-page {
+            .qn__create-page-form {
+                .btn-toolbar {
+                    .qudos-primary-btn {
+                        @include qudos-primary-button;
+                        width: 47%;
+                    }
+
+                    .qudos-secondary-btn {
+                        @include qudos-tertiary-button;
+                        width: 47%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width: 1024px) {
+    .visible-mobile {
+        .filter {
+            .nav {
+                margin: 0 auto;
+
+                .nav-item {
+                    a {
+                        button {
+                            padding: 0;
+                            font-size: 14px;
+                        }
+
+                        .first-child-btn {
+                            width: 140px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #myPage-networkTabContent {
+        #qn-create-page {
+            .qn__create-page-form {
+                margin-left: 15px;
+
+                .btn-toolbar {
+                    .qudos-primary-btn {
+                        @include qudos-primary-button;
+                        width: 46%;
+                    }
+
+                    .qudos-secondary-btn {
+                        @include qudos-tertiary-button;
+                        width: 46%;
+                    }
+                }
+
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 33.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .qn__create-page {
+        .qn__create-page-form {
+            form {
+                select {
+                    width: 380px;
+                }
+
+                .btn-toolbar {
+                    width: 380px;
+                    .qudos-primary-btn {
+                        width: 185px;
+                        font-size: 16px;
+                    }
+    
+                    .qudos-secondary-btn {
+                        width: 185px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 384px) {
+    .qn__create-page {
+        .qn__create-page-form {
+            form {
+                select {
+                    width: 350px;
+                }
+
+                .btn-toolbar {
+                    width: 350px;
+                    .qudos-primary-btn {
+                        width: 170px;
+                        font-size: 16px;
+                    }
+    
+                    .qudos-secondary-btn {
+                        width: 170px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .visible-mobile {
+        .filter {
+            .nav {
+                margin: 0 auto;
+
+                .nav-item {
+                    .nav-link {
+                        padding: 20px 0 15px 0;
+                        button {
+                            padding: 0;
+                            font-size: 12px;
+                        }
+
+                        .first-child-btn {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .qn__create-page {
+        .qn__create-page-form {
+            form {
+                select {
+                    width: 320px;
+                }
+
+                .btn-toolbar {
+                    width: 320px;
+                    .qudos-primary-btn {
+                        width: 155px;
+                        font-size: 16px;
+                    }
+    
+                    .qudos-secondary-btn {
+                        width: 155px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .visible-mobile {
+        .filter {
+            .nav {
+                margin: 0 auto;
+
+                .nav-item {
+                    .nav-link {
+                        padding: 10px 0 5px 0;
+                        button {
+                            padding: 0;
+                            font-size: 12px;
+                        }
+
+                        .first-child-btn {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .qn__create-page {
+        .qn__create-page-form {
+            form {
+                select {
+                    width: 250px;
+                }
+
+                .btn-toolbar {
+                    width: 250px;
+                    .qudos-primary-btn {
+                        width: 120px;
+                        font-size: 16px;
+                    }
+    
+                    .qudos-secondary-btn {
+                        width: 120px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+/** Create Groups Stylings **/
+.qn__create-page {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .qn__create-page-head {
+        text-align: center;
+        .image-upload {
+            label {
+                .fa-user-circle {
+                    font-size: 62px;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .image-upload>input {
+            display: none;
+        }
+    }
+
+    .qn__create-page-form {
+        font-size: 16px;
+
+        form {
+            text-align: center;
+            margin-top: 10px;
+
+            #qn-create-page-input {
+                font-size: 16px;
+                width: 50%;
+                text-align: center;
+                border-top-width: 0;
+                border-left-width: 0;
+                border-right-width: 0;
+                margin: 0 auto;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            ::-webkit-input-placeholder {
+                text-align: center;
+                font-size: 16px;
+            }
+
+            :-moz-placeholder {
+                /* Firefox 18- */
+                text-align: center;
+                font-size: 16px;
+            }
+
+            ::-moz-placeholder {
+                /* Firefox 19+ */
+                text-align: center;
+                font-size: 16px;
+            }
+
+            :-ms-input-placeholder {
+                text-align: center;
+                font-size: 16px;
+            }
+
+            label {
+                margin-bottom: 0;
+                color: $qudos-darkgrey;
+                font-weight: 300;
+            }
+            select {
+                width: 420px;
+            }
+            #pagePrivacySettingSelect, #pageIndustrySelect {
+                color: $qudos-darkgrey;
+                font-size: 14px;
+                height: 35px;
+            }
+            .btn-toolbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 420px;
+                .btn {
+                    margin-left: 0;
+                }
+                .qudos-primary-btn {
+                    @include qudos-primary-button;
+                    padding-top: 6px;
+                    width: 205px;
+                    font-size: 16px;
+                }
+
+                .qudos-secondary-btn {
+                    @include qudos-tertiary-button;
+                    padding-top: 6px;
+                    width: 205px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+.qudoslist-card {
+    border: 0;
+
+    .card-body {
+        .row {
+            .col {
+                .panel-default {
+                    .panel-body {
+                        .post-heading {
+                            .row {
+                                .col {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-end;
+                                    a {
+                                        i {
+                                            font-size: 22px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .photo-profile {
+        border-radius: 25px;
+    }
+
+    .post-body {
+        font-size: 16px;
+        padding-top: 1rem;
+    }
+
+    .post-footer {
+        .bot__action__buttons {
+            a {
+                color: $qudos-darkgrey;
+            }
+
+            i {
+                color: $qudos-darkgrey;
+            }
+
+            font-size: 14px;
+        }
+    }
+
+    .post-footer-option {
+        li {
+            float: left;
+            margin-right: 50px;
+            padding-bottom: 15px;
+
+            a {
+                color: #AFB4BD;
+                font-weight: 500;
+
+            }
+        }
+    }
+
+    .photo-profile {
+        border: 1px solid #DDD;
+    }
+
+    .anchor-username h4 {
+        font-weight: bold;
+    }
+
+    .post-footer-action-wrapper {
+        border-radius: 10px;
+
+        .media {
+            background-color: #F6F7F8;
+            padding: 5px;
+        }
+
+        form {
+            .col {
+                img {
+                    border-radius: 25px;
+                }
+
+                button {
+                    width: 40px;
+                    height: 40px;
+                    background-color: white;
+                    position: relative;
+                    border: 2px solid $qudos-lightgrey;
+
+                    &:hover {
+                        i {
+                            color: white;
+                        }
+
+                        border: 0;
+                        background-color: $qudos-blue;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 51%;
+                        left: 49%;
+                        height: 50%;
+                        transform: translate(-50%, -50%);
+                        display: block;
+                        color: $qudos-grey;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+                .fas {
+                    font-size: 16px;
+                }
+            }
+
+            .col-xs-8 {
+                width: 550px;
+                padding: 0;
+
+                input {
+                    font-size: 14px;
+                    height: 38px;
+                    border-radius: 20px;
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+
+    .media {
+        padding-left: 15px;
+
+        .media-body {
+            margin-left: 10px;
+            line-height: 15px;
+
+            .media-heading {
+                color: $qudos-black;
+                font-size: 18px;
+                margin: 0;
+            }
+
+            .anchor-time {
+                color: #ADB2BB;
+                font-size: 12px;
+            }
+        }
+    }
+}

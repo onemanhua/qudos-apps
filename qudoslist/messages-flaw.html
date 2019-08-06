@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> 
+
+	<!--CSS-->
+	<link rel="stylesheet" href="css/bootstrap-v3.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.all.css">
+	<link rel="stylesheet" href="css/intlTelInput.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Custom CSS -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/custom.min.css">
+	<title>QudosList™</title>
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__content">
+						<a href="#" class="header__logo">
+							<img src="img/logo--white.png" alt="">
+						</a>
+
+						<form action="#" class="header__form">
+							<input type="text" placeholder="Search">
+						</form>
+
+						<nav class="header__nav">
+							<div class="header__nav-title">
+								<i class="fal fa-long-arrow-left"></i>
+								Menu
+							</div>
+
+							<ul class="header__nav-list">
+								<li>
+									<a href="home.html">
+										<i class="fal fa-home"></i>
+										<span>Home</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="qudos.html">
+										<i class="fal fa-bullseye"></i>
+										<span>My Qudos</span>
+									 </a>
+								</li>
+
+								<li>
+									<a href="network.html">
+										<i class="fal fa-user-friends"></i>
+										<span>Network</span>
+									</a>
+								</li>
+
+								<li class="visible-mobile">
+									<a href="profile.html">
+										<i class="fal fa-user"></i>
+										<span>Profile</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="fal fa-comments-alt"></i>
+										<span class="visible-mobile">Messaging</span>
+									</a>
+								</li>
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fa-bell"></i>
+										<span>Notification</span>
+									</a>
+								</li>
+
+								<div class="hidden-mobile dropdown">
+									<button class="header__not-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span>12</span>
+										<i class="fal fa-bell"></i>
+									</button>
+
+									<div class="notification-drop dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<div class="notification-drop__header">
+											<span>Notifications</span>
+											<span>349</span>
+										</div>
+
+										<div class="notification-drop__body">
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="hidden-mobile">
+									<a href="#" class="header__timeline-desk">
+										<img src="img/avatar.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="hidden-mobile dropdown">
+									<button class="header__more" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-caret-down"></i>
+									</button>
+
+									<div class="header__more-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+										<a href="profile.html">
+											<i class="fal fa-user"></i>
+											<span>Profile</span>
+										</a>
+										<a href="#">
+											<i class="fal fal fa-power-off"></i>
+											<span>Sign Out</span>
+										</a>
+									</div>
+								</div>
+
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fal fa-power-off"></i>
+										<span class="visible-mobile">Sign Out</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<a href="#" class="header__timeline-mob">
+							<img src="img/avatar.jpg" alt="">
+						</a>
+
+						<button class="header__menu" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="page">
+		<!-- Top Nav icon start -->
+		<div class="row m-0">
+				<div class="col-12 p-0">
+					<div id ="body"></div>
+					<div class="top__nav d-flex justify-content-between" ng-show="mobileView && is_auth">
+						<a href="home.html" ui-sref="home"><i class="fal fa-list-alt top__nav-icon"><span>10</span></i></a>
+						<a href="network.html" ui-sref="network"><i
+								class="fal fa-user-friends top__nav-icon"><span>99</span></i></a>
+						<a class="active"><i class="fal fa-comments-alt top__nav-icon"><span>12</span></i></a>
+						<a href="notifications.html"><i class="fal fa-bell top__nav-icon"><span>11</span></i></a>
+						<a href="settings.html" data-toggle="modal" data-target="#settingsModal"><i
+								class="fal fa-cog top__nav-icon"></i></a>
+					</div>
+					<ui-view></ui-view>
+				</div>
+			</div>
+		<!-- Top Nav icon Close -->
+		<!-- Settings Modal start -->
+		<div class="modal" id="settingsModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="settingsModalCenterTitle">Settings Options</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="privacySettingsSelect">Account Privacy</label>
+								<select class="form-control" id="privacySettings">
+									<option>Public (defautl)</option>
+									<option>Private</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="languageSettingsSelect">Language</label>
+								<select class="form-control" id="languageSettings">
+									<option value="en">English (defautl)</option>
+									<option value="kr">Korean</option>
+									<option value="mr">Mandarin</option>
+									<option value="fr">French</option>
+									<option value="gm">German</option>
+									<option value="pht">Filipino (Tagalog)</option>
+									<option value="phb">Filipino (Bisaya)</option>
+								</select>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn qudos-primary-btn" data-dismiss="modal">Sign-out</button>
+						<button type="button" class="btn qudos-tertiary-btn">Save</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- Settings Modal start -->
+
+        <!-- Message Html Strat -->
+		<div class="row">
+			<div class="col-12">
+			    <div class="card my-5 message__section">
+			        <div class="card-header">
+			            <h4 class="m-0"><i class="fal fa-comments-alt"></i> Messages</h4>
+			        </div>
+			        <div class="card-body p-0">
+			            <div class="row m-0">
+			                <div class="col-md-12 col-lg-5 p-0">
+			                    <div class="message__user__section">
+			                        <div class="unread__message d-flex justify-content-between">
+			                            <a href="#" class="creat__new__messges md-block">Create new message</a>
+			                            <a href="message-flaw-mobile.html" class="creat__new__messges sm-block">Create new message</a>
+			                            <ul class="d-flex">
+			                                <li>Clear all</li>
+			                                <li>Mark all read</li>
+			                            </ul>
+			                        </div>
+			                        <ul class="list-group message__user__list">
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar <span class="user-active"></span></h4>
+			                                        <p>My selfie game is lacking can...</p>
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        5 Min
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar <span class="user-active"></span></h4>
+			                                        <p>Thanks again you have been commodo consequat. Duis aute i...</p>
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        5 Min
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar <span class="user-active"></span></h4>
+			                                        <p>My selfie game is lacking can...</p>
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        5 Min
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar <span class="user-active"></span></h4>
+			                                        <p>Thanks again you have been commodo consequat. Duis aute i...</p>
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        5 Min
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar <span class="user-active"></span></h4>
+			                                        <p>My selfie game is lacking can...</p>
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        5 Min
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar <span class="user-active"></span></h4>
+			                                        <p>Thanks again you have been commodo consequat. Duis aute i...</p>
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        5 Min
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar <span class="user-active"></span></h4>
+			                                        <p>My selfie game is lacking can...</p>
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        5 Min
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar <span class="user-active"></span></h4>
+			                                        <p>Thanks again you have been commodo consequat. Duis aute i...</p>
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        5 Min
+			                                    </div>
+			                                </div>
+			                            </li>
+			                        </ul>
+			                    </div>
+			                </div>
+			                <div class="col-md-12 col-lg-7 p-0">
+			                    <div class="ridequdos__chat msg__d__none">
+			                        <div class="chat-header create__new__message__header">
+			                           <div class="page__panel mob-filter">
+											<span class="mob-filter__results">
+												<i class="fa fa-search"></i>
+												<input type="text" class="form-control" placeholder="Search name or email address" name="">
+											</span>
+
+											<div class="mob-filter__btns">						
+												<a href="message-empty.html">Create</a>
+											</div>
+										</div>
+			                        </div>
+
+			                        <div class="search__thumb__lists__sec d-flex flex-wrap">
+			                        	<div class="search__thumb__lists">
+			                        		<a class="close__search" href="#">x</a>
+			                        		<span><img src="img/avatar.jpg" class="img-fluid" alt="img"></span>
+			                        		<span>Name</span>
+			                        	</div>
+			                        </div>
+			                        
+			                        <ul class="list-group message__user__list create__new__message__list">
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between mt-3">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar</h4>			                                        
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        <input type="checkbox" class="form-control">
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between mt-3">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar</h4>			                                        
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        <input type="checkbox" class="form-control">
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between mt-3">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar</h4>			                                        
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        <input type="checkbox" class="form-control">
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between mt-3">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar</h4>			                                        
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        <input type="checkbox" class="form-control">
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between mt-3">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar</h4>			                                        
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        <input type="checkbox" class="form-control">
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between mt-3">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar</h4>			                                        
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        <input type="checkbox" class="form-control">
+			                                    </div>
+			                                </div>
+			                            </li>
+			                            <li class="list-group-item">
+			                                <div class="d-flex justify-content-between mt-3">
+			                                    <div class="message__user__list-thumb">
+			                                        <img src="img/avatar.jpg" class="img-fluid" alt="img">
+			                                        <h4>Kirsten Mckellar</h4>			                                        
+			                                    </div>
+			                                    <div class="message__user__time">
+			                                        <input type="checkbox" class="form-control">
+			                                    </div>
+			                                </div>
+			                            </li>	
+			                        </ul>
+
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>			
+		</div>
+		<!-- Message Html Close -->
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<svg class="QL_LOGO_ROCKWELL footer__logo"></svg>
+				</div>
+
+				<div class="col-12 col-lg-5">
+					<div class="row">
+						<div class="col-6 col-lg-7">
+							<h4 class="footer__title">Reach us</h4>
+							<div class="footer__text">
+								<p>1969, Steinway street, long Island City, NewYork. NY 1105</p>
+								<p>(718)-360-5010</p>
+								<p>support@Qudos.us</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-5">
+							<h4 class="footer__title">Our Apps</h4>
+							<a href="#" class="footer__app">
+								<img src="img/app-store.png" alt="">
+							</a>
+							<a href="#" class="footer__app">
+								<img src="img/google-play.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="row">
+						<div class="col-6">
+							<h4 class="footer__title">About</h4>
+							<div class="footer__list">
+								<a href="#">Company</a>
+								<a href="#">Press</a>
+								<a href="#">Terms & Conditions</a>
+								<a href="#">Privacy Policy</a>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<h4 class="footer__title">Ride</h4>
+							<div class="footer__list">
+								<a href="#">Drive</a>
+								<a href="#">Cities</a>
+								<a href="#">Help</a>
+								<a href="#">Safety</a>
+								<a href="#">Login</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-3">
+					<h4 class="footer__title">Connect</h4>
+					<div class="footer__social">
+						<a href="#"><img src="img/facebook.png" alt=""></a>
+						<a href="#"><img src="img/twitter.png" alt=""></a>
+						<a href="#"><img src="img/linkedin1.png" alt=""></a>
+						<a href="#"><img src="img/instagram1.png" alt=""></a>
+					</div>
+				</div>
+
+				<div class="col hidden-mobile">
+					<div class="footer__downside">
+						<div>
+							<span class="footer__copyright">All Rights Reserved</span>
+							<span class="footer__copyright">© CopyRighted 2018</span>
+						</div>
+
+						<div>
+							<span class="footer__copyright">www.rideQudos.com</span>
+						</div>
+
+						<div>
+							<a href="#" class="footer__link">Terms and Conditions</a>
+							<a href="#" class="footer__link">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="visible-mobile footer__copyright text-center" id="mobile__footer__copyright">© Copyrights 2019</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

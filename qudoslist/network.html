@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+	<!--CSS-->
+	<link rel="stylesheet" href="css/bootstrap-v3.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.all.css">
+	<link rel="stylesheet" href="css/intlTelInput.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Custom CSS -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/custom.min.css">
+	<title>QudosList™</title>
+	<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	<!-- remove this if you use Modernizr -->
+	<script>
+		(function (e, t, n) {
+			var r = e.querySelectorAll("html")[0];
+			r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
+		})(document, window, 0);
+	</script>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__content">
+						<a href="#" class="header__logo">
+							<img src="img/logo--white.png" alt="">
+						</a>
+
+						<form action="#" class="header__form">
+							<input type="text" placeholder="Search">
+						</form>
+
+						<nav class="header__nav">
+							<div class="header__nav-title">
+								<i class="fal fa-long-arrow-left"></i>
+								Menu
+							</div>
+
+							<ul class="header__nav-list">
+								<li>
+									<a href="home.html">
+										<i class="fal fa-home"></i>
+										<span>Home</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="qudos.html">
+										<i class="fal fa-bullseye"></i>
+										<span>My Qudos</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="network.html">
+										<i class="fal fa-user-friends"></i>
+										<span>Network</span>
+									</a>
+								</li>
+
+								<li class="visible-mobile">
+									<a href="profile.html">
+										<i class="fal fa-user"></i>
+										<span>Profile</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="fal fa-comments-alt"></i>
+										<span class="visible-mobile">Messaging</span>
+									</a>
+								</li>
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fa-bell"></i>
+										<span>Notification</span>
+									</a>
+								</li>
+
+								<div class="hidden-mobile dropdown">
+									<button class="header__not-btn" type="button" id="dropdownMenuButton"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span>12</span>
+										<i class="fal fa-bell"></i>
+									</button>
+
+									<div class="notification-drop dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<div class="notification-drop__header">
+											<span>Notifications</span>
+											<span>349</span>
+										</div>
+
+										<div class="notification-drop__body">
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="hidden-mobile">
+									<a href="#" class="header__timeline-desk">
+										<img src="img/avatar.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="hidden-mobile dropdown">
+									<button class="header__more" type="button" id="dropdownMenuButton2"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-caret-down"></i>
+									</button>
+
+									<div class="header__more-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+										<a href="profile.html">
+											<i class="fal fa-user"></i>
+											<span>Profile</span>
+										</a>
+										<a href="#">
+											<i class="fal fal fa-power-off"></i>
+											<span>Sign Out</span>
+										</a>
+									</div>
+								</div>
+
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fal fa-power-off"></i>
+										<span class="visible-mobile">Sign Out</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<a href="#" class="header__timeline-mob mr-3">
+							<img src="img/avatar.jpg" alt="">
+						</a>
+
+						<button class="header__menu d-none" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="page">
+		<!-- Top Nav icon start -->
+		<div class="row m-0">
+			<div class="col-12 p-0">
+				<div id="body"></div>
+				<div class="top__nav d-flex justify-content-between" ng-show="mobileView && is_auth">
+					<a href="home.html" ui-sref="home"><i class="fal fa-list-alt top__nav-icon"><span>10</span></i></a>
+					<a href="#" class="active" ui-sref="network"><i
+							class="fal fa-user-friends top__nav-icon"><span>99</span></i></a>
+					<a href="messages.html"><i class="fal fa-comments-alt top__nav-icon"><span>12</span></i></a>
+					<a href="notifications.html"><i class="fal fa-bell top__nav-icon"><span>11</span></i></a>
+					<a href="settings.html" data-toggle="modal" data-target="#settingsModal"><i
+							class="fal fa-cog top__nav-icon"></i></a>
+				</div>
+				<ui-view></ui-view>
+			</div>
+		</div>
+		<!-- Top Nav icon Close -->
+		<!-- Settings Modal start -->
+		<div class="modal" id="settingsModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="settingsModalCenterTitle">Settings Options</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="privacySettingsSelect">Account Privacy</label>
+								<select class="form-control" id="privacySettings">
+									<option>Public (defautl)</option>
+									<option>Private</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="languageSettingsSelect">Language</label>
+								<select class="form-control" id="languageSettings">
+									<option value="en">English (defautl)</option>
+									<option value="kr">Korean</option>
+									<option value="mr">Mandarin</option>
+									<option value="fr">French</option>
+									<option value="gm">German</option>
+									<option value="pht">Filipino (Tagalog)</option>
+									<option value="phb">Filipino (Bisaya)</option>
+								</select>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn qudos-primary-btn" data-dismiss="modal">Sign-out</button>
+						<button type="button" class="btn qudos-tertiary-btn">Save</button>
+					</div>
+				</div>
+			</div>
+		</div><!-- Settings Modal start -->
+
+		<div class="row">
+			<div class="col-12 col-lg-3 col-xl-2 page__sidebar">
+				<div class="summary">
+					<div class="summary__avatar">
+						<img src="img/avatar.jpg" alt="">
+					</div>
+
+					<div class="summary__title">Heather Berry</div>
+
+					<a href="#" class="summary__profile">My Profile</a>
+
+					<div class="summary__stat">
+						<span>254</span>
+						<p>Followers</p>
+					</div>
+
+					<div class="summary__stat">
+						<span>800</span>
+						<p>Posts</p>
+					</div>
+
+					<div class="summary__stat">
+						<span>563</span>
+						<p>Likes</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6 col-xl-8 page__content">
+				<!-- Desktop filter search start -->
+				<div class="hidden-mobile filter">
+					<ul class="nav justify-content-start" role="tablist">
+						<li class="nav-item"><a class="nav-link py-0 px-0 active" data-toggle="tab"
+								href="#qudosfave-network"><button>QudosFave™ <span>Drivers</span></button></a></li>
+						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab"
+								href="#network--people"><button>People</button></a></li>
+						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab"
+								href="#network--groups"><button>Groups</button></a></li>
+						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab"
+								href="#network--page"><button>Pages</button></a>
+						</li>
+					</ul>
+				</div><!-- Desktop filter search end -->
+				<!-- Mobile filter search start -->
+				<span class="visible-mobile">
+					<div class="filter">
+						<ul class="nav nav-fill" role="tablist">
+							<li class="nav-item"><a class="nav-link active" data-toggle="tab"
+									href="#qudosfave-network"><button class="first-child-btn">QudosFave™
+										<span>Drivers</span></button></a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="tab"
+									href="#network--people"><button>People</button></a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="tab"
+									href="#network--groups"><button>Groups</button></a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="tab"
+									href="#network--page"><button>Pages</button></a></li>
+						</ul>
+					</div>
+				</span><!-- Mobile filter search end -->
+				<!-- Qudos searchbar start -->
+				<div class="visible-mobile container">
+					<div class="row">
+						<div class="col">
+							<section class="qudosfaves__searchbar">
+								<div class="form-group has-search">
+									<span class="fa fa-search form-control-feedback"></span>
+									<input type="text" class="form-control" placeholder="Search">
+									<span class="form-control-hover-icon">
+										<a role="button" href="#">
+											<svg class="filter-icon"></svg>
+										</a>
+									</span>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div><!-- Qudos searchbar end -->
+				<div class="collapse" id="show__qudo__search">
+					<div class="page__panel mob-filter">
+						<span class="mob-filter__results">
+							<i class="fa fa-search"></i>
+							<input type="text" class="form-control" placeholder="Search" name="searchFilter">
+						</span>
+
+						<div class="mob-filter__btns">
+							<button type="button">Filter</button>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="page__panel results pt-0">
+					<!-- <span class="results__title results__title--first"><i class="fa fa-users"></i> Search Results</span> -->
+					<div class="results__content">
+						<div class="row tab-content">
+							<!-- MyQudos content start -->
+							<div id="qudosfave-network" class="tab-pane in active">
+								<!-- Desktop navbar view start -->
+								<span class="hidden-mobile">
+									<ul class="ml-4 my-4 col nav">
+										<li class="nav-item"><a data-toggle="tab" class="nav-link active"
+												href="#qudosfave-network--myqudos">MyQudos™</a></li>
+										<li class="nav-item"><a data-toggle="tab" class="nav-link"
+												href="#qudosfave-network--explore">Explore</a></li>
+									</ul>
+								</span><!-- Desktop navbar view end -->
+								<!-- Mobile navbar view start -->
+								<span class="visible-mobile pb-5">
+									<ul class="col nav nav-fill nav-tabs px-4">
+										<li class="nav-item"><a data-toggle="tab" class="nav-link active"
+												href="#qudosfave-network--myqudos">MyQudos™</a></li>
+										<li class="nav-item"><a data-toggle="tab" class="nav-link"
+												href="#qudosfave-network--explore">Explore</a></li>
+									</ul>
+								</span><!-- Mobile navbar view end -->
+								<div class="tab-content">
+									<!-- QudosFave MyQudos tab start -->
+									<div id="qudosfave-network--myqudos" class="tab-pane in active">
+										<div class="container">
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">View Profile</a>
+														<a href="#">Message</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">View Profile</a>
+														<a href="#">Message</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">View Profile</a>
+														<a href="#">Message</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">View Profile</a>
+														<a href="#">Message</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- QudosFave MyQudos tab end -->
+									<!-- QudosFave Explore tab start -->
+									<div id="qudosfave-network--explore" class="tab-pane">
+										<div class="container">
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Add</a>
+														<a href="#">Follow</a>
+														<a href="#">Share</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Add</a>
+														<a href="#">Follow</a>
+														<a href="#">Share</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Add</a>
+														<a href="#">Follow</a>
+														<a href="#">Share</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Add</a>
+														<a href="#">Follow</a>
+														<a href="#">Share</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- QudosFave Explore tab end -->
+								</div>
+							</div><!-- MyQudos content end -->
+							<div id="network--people" class="tab-pane">
+								<!-- Desktop navbar view start -->
+								<span class="hidden-mobile">
+									<ul class="ml-4 my-4 col nav">
+										<li class="nav-item"><a class="nav-link active" data-toggle="tab"
+												href="#people-network--myfriends">My Friends</a></li>
+										<li class="nav-item"><a class="nav-link" data-toggle="tab"
+												href="#people-network--explore">Explore</a></li>
+										<li class="nav-item"><a class="nav-link" data-toggle="tab"
+												href="#people-network--pending">Pending</a></li>
+									</ul>
+								</span><!-- Desktop navbar view end -->
+								<!-- Mobile navbar view start -->
+								<span class="visible-mobile pb-5">
+									<ul class="col nav nav-fill nav-tabs px-4">
+										<li class="nav-item"><a class="nav-link active" data-toggle="tab"
+												href="#people-network--myfriends">My Friends</a></li>
+										<li class="nav-item"><a class="nav-link" data-toggle="tab"
+												href="#people-network--explore">Explore</a></li>
+										<li class="nav-item"><a class="nav-link" data-toggle="tab"
+												href="#people-network--pending">Pending</a></li>
+									</ul>
+								</span><!-- Mobile navbar view end -->
+								<div class="tab-content">
+									<!-- People/MyFriends tab start -->
+									<div id="people-network--myfriends" class="tab-pane in active">
+										<div class="container">
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">View Profile</a>
+														<a href="#">Message</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">View Profile</a>
+														<a href="#">Message</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">View Profile</a>
+														<a href="#">Message</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">View Profile</a>
+														<a href="#">Message</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- People/MyFriends tab end -->
+									<!-- People/Explore tab start -->
+									<div id="people-network--explore" class="tab-pane">
+										<div class="container">
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Add</a>
+														<a href="#">Follow</a>
+														<a href="#">Share</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Add</a>
+														<a href="#">Follow</a>
+														<a href="#">Share</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Add</a>
+														<a href="#">Follow</a>
+														<a href="#">Share</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Add</a>
+														<a href="#">Follow</a>
+														<a href="#">Share</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- People/Explore tab end -->
+									<!-- People/Pending tab start -->
+									<div id="people-network--pending" class="tab-pane">
+										<div class="container">
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Accept</a>
+														<a href="#">Reject</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Accept</a>
+														<a href="#">Reject</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Accept</a>
+														<a href="#">Reject</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<i class="fas fa-heart"></i><span>111</span>
+														<i class="fas fa-star"></i><span>111</span>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Accept</a>
+														<a href="#">Reject</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- People/Pending tab start -->
+								</div>
+							</div>
+							<div id="network--groups" class="tab-pane">
+								<!-- Desktop navbar view start -->
+								<span class="hidden-mobile">
+									<ul class="ml-4 my-4 col nav">
+										<li class="active"><a data-toggle="tab" href="#groups-network--mygroups">My
+												Groups</a></li>
+										<li><a data-toggle="tab" href="#groups-network--explore">Explore</a></li>
+										<li><a data-toggle="tab" href="#groups-network--create">Create Group</a></li>
+									</ul>
+								</span><!-- Desktop navbar view end -->
+								<!-- Mobile navbar view start -->
+								<span class="visible-mobile pb-5">
+									<ul class="col nav nav-fill nav-tabs px-4">
+										<li class="nav-item"><a class="nav-link active" data-toggle="tab"
+												href="#groups-network--mygroups">My Groups</a></li>
+										<li class="nav-item"><a class="nav-link" data-toggle="tab"
+												href="#groups-network--explore">Explore</a></li>
+										<li class="nav-item d-flex justify-content-center align-items-center"
+											id="qn-create-groups-li">
+											<a class="btn rounded-circle" id="qn-create-groups-tab" data-toggle="tab"
+												href="#groups-network--create">
+												<i class="fal fa-plus"></i>
+											</a>
+										</li>
+									</ul>
+								</span><!-- Mobile navbar view end -->
+								<div class="tab-content">
+									<!-- Groups/MyGroups tab start -->
+									<div id="groups-network--mygroups" class="tab-pane in active">
+										<div class="container">
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<p>Members (<span>666</span>)</p>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Leave Group</a>
+														<a href="#">View</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<p>Members (<span>666</span>)</p>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Leave Group</a>
+														<a href="#">View</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<p>Members (<span>666</span>)</p>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Leave Group</a>
+														<a href="#">View</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<p>Members (<span>666</span>)</p>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Leave Group</a>
+														<a href="#">View</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- Groups/MyGroups tab end -->
+									<!-- Groups/Explore tab start -->
+									<div id="groups-network--explore" class="tab-pane">
+										<div class="container">
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<p>Members (<span>666</span>)</p>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Join Group</a>
+														<a href="#">View</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<p>Members (<span>666</span>)</p>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Join Group</a>
+														<a href="#">View</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<p>Members (<span>666</span>)</p>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Join Group</a>
+														<a href="#">View</a>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-xs-6 col-lg-12 col-xl-6">
+												<div class="user">
+													<div class="user__img">
+														<img src="img/avatar.jpg" alt="">
+													</div>
+
+													<div class="user__meta">
+														<h3>Name name</h3>
+														<p>Rajkot, Gujarat, India</p>
+														<p>Members (<span>666</span>)</p>
+													</div>
+
+													<div class="user__actions">
+														<a href="#">Join Group</a>
+														<a href="#">View</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- Groups/Explore tab end -->
+								</div>
+							</div>
+							<div id="network--page" class="tab-pane w-100 mx-2">
+								<div id="qn-create-page">
+									<section class="row qn__create-page pb-0">
+										<div class="col-xs-12 qn__create-page-head">
+											<div class="image-upload">
+												<label for="file-input">
+													<i class="fas fa-user-circle"></i>
+												</label>
+												<input id="file-input" type="file" name="pageImage"
+													accept="image/x-png,image/gif,image/jpeg" />
+											</div>
+										</div>
+										<div class="col-xs-12 qn__create-page-form">
+											<form class="w-100">
+												<div class="form-group mb-4">
+													<div class="container text-center">
+														<input type="text" class="form-control form-height"
+															id="qn-create-page-input" placeholder="Page Name">
+													</div>
+												</div>
+												<div class="form-group mx-auto">
+													<div class="col-md-12 px-3 mb-4 form-height">
+														<label for="pagePrivacySetting" class="d-none"></label>
+														<select class="form-control mx-auto"
+															id="pagePrivacySettingSelect">
+															<option value="public">Public <em>(default)</em>
+															</option>
+															<option value="private">Private</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-md-12 px-3 mb-4 form-height">
+														<label for="pageIndustry" class="d-none"></label>
+														<select class="form-control mx-auto" id="pageIndustrySelect">
+															<option value="public">Personal <em>(default)</em>
+															</option>
+															<option value="general">General</option>
+															<option value="interactive">Interactive</option>
+															<option value="business">Business</option>
+															<option value="positive">Positive</option>
+															<option value="general">General</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-12 px-0 mt-3 mb-5">
+													<div class="btn-toolbar mx-auto">
+														<a href="#" class="btn qudos-primary-btn mr-2">Create
+															Page</a>
+														<a href="network.html" class="btn qudos-secondary-btn ml-2">Cancel</a>
+													</div>
+												</div>
+											</form>
+										</div>
+									</section>
+								</div>
+							</div>
+							<!-- Groups/Create tab start -->
+							<div id="groups-network--create" class="tab-pane w-100">
+								<div class="container" id="qn-groups">
+									<div class="page__panel results border-bottom-0">
+										<section class="network__tabs">
+											<div id="myGroup-networkTabContent">
+												<div id="qn-create-groups">
+													<section class="row qn__create-groups pb-0">
+														<div class="col-xs-12 qn__create-groups-head">
+															<div class="image-upload">
+																<label for="file-input">
+																	<i class="fas fa-user-circle"></i>
+																</label>
+																<input id="file-input" type="file" name="groupImage"
+																	accept="image/x-png,image/gif,image/jpeg" />
+															</div>
+														</div>
+														<div class="col-xs-12 qn__create-groups-form">
+															<form>
+																<div class="form-group">
+																	<div class="row">
+																		<div class="container text-center">
+																			<input type="text" class="form-control"
+																				id="qn-create-group-input"
+																				placeholder="Group Name">
+																		</div>
+																	</div>
+																	<div class="col-md-10 offset-md-1 px-0">
+																		<!-- Qudos searchbar start -->
+																		<div class="qudosfaves__searchbar">
+																			<div class="form-group has-search">
+																				<span
+																					class="fa fa-search form-control-feedback"></span>
+																				<input type="text"
+																					class="form-control pt-1"
+																					placeholder="Search (Spanish, Toyota, etc...)">
+																				<span class="form-control-hover-icon">
+																					<a role="button" href="#">
+																						<svg class="filter-icon"></svg>
+																					</a>
+																				</span>
+																			</div>
+																		</div>
+																		<!-- Qudos searchbar end -->
+																	</div>
+																	<div class="col-md-10 offset-md-1 px-0">
+																		<div
+																			class="btn-toolbar justify-content-between">
+																			<a href="#"
+																				class="btn qudos-primary-btn">Create
+																				Group</a>
+																			<a href="network.html"
+																				class="btn qudos-secondary-btn">Cancel</a>
+																		</div>
+																	</div>
+																</div>
+															</form>
+															<div class="col-md-12 px-2 mt-3">
+																<div
+																	class="card border-left-0 border-right-0 border-bottom-0 mx-auto">
+																	<ul class="list-group list-group-flush mt-3">
+																		<li class="list-group-item">
+																			<span class="list-left">
+																				<img src="img/avatar.jpg"
+																					alt="user-image"
+																					class="rounded-circle" width="32px"
+																					height="32px">
+																				<p>Username</p>
+																			</span>
+																			<span class="list-right">
+																				<label class="checkbox">
+																					<input type="checkbox" />
+																					<span class="default"></span>
+																				</label>
+																			</span>
+																		</li>
+																		<li class="list-group-item">
+																			<span class="list-left">
+																				<img src="img/avatar.jpg"
+																					alt="user-image"
+																					class="rounded-circle" width="32px"
+																					height="32px">
+																				<p>Username</p>
+																			</span>
+																			<span class="list-right">
+																				<label class="checkbox">
+																					<input type="checkbox" />
+																					<span class="default"></span>
+																				</label>
+																			</span>
+																		</li>
+																		<li class="list-group-item">
+																			<span class="list-left">
+																				<img src="img/avatar.jpg"
+																					alt="user-image"
+																					class="rounded-circle" width="32px"
+																					height="32px">
+																				<p>Username</p>
+																			</span>
+																			<span class="list-right">
+																				<label class="checkbox">
+																					<input type="checkbox" />
+																					<span class="default"></span>
+																				</label>
+																			</span>
+																		</li>
+																	</ul>
+																</div>
+																<div class="row">
+																	<div class="col-xs-12">
+																		<button class="results__more" type="button">Load
+																			More</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div><!-- Groups/Create tab end -->
+						</div>
+						<!-- <div class="row">
+							<div class="col-12">
+								<button class="results__more" type="button">Load More</button>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-3 col-xl-2 page__sidebar">
+				<div class="search-box">
+					<div class="search-box__title">Looking for:</div>
+
+					<div class="search-box__group">
+						<label for="">Vehicle Make</label>
+						<input type="text" placeholder="Make">
+					</div>
+
+					<div class="search-box__group">
+						<label for="">Car Model</label>
+						<input type="text" placeholder="Model">
+					</div>
+
+					<div class="search-box__group">
+						<label for="">Seating Capacity</label>
+						<select>
+							<option value="">Choose number of seats</option>
+							<option value="4">4</option>
+							<option value="6">6</option>
+							<option value="8">8</option>
+						</select>
+					</div>
+
+					<div class="search-box__group">
+						<label for="">City</label>
+						<select>
+							<option value=""></option>
+							<option value="New York">New York</option>
+							<option value="New Jersey">New Jersey</option>
+							<option value="Connecticut">Connecticut</option>
+						</select>
+					</div>
+
+					<div class="search-box__group">
+						<label for="">Zip Code</label>
+						<input type="text" placeholder="Enter Zip Code">
+					</div>
+
+					<button class="search-box__btn" type="button">Search</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<svg class="QL_LOGO_ROCKWELL footer__logo"></svg>
+				</div>
+
+				<div class="col-12 col-lg-5">
+					<div class="row">
+						<div class="col-6 col-lg-7">
+							<h4 class="footer__title">Reach us</h4>
+							<div class="footer__text">
+								<p>1969, Steinway street, long Island City, NewYork. NY 1105</p>
+								<p>(718)-360-5010</p>
+								<p>support@Qudos.us</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-5">
+							<h4 class="footer__title">Our Apps</h4>
+							<a href="#" class="footer__app">
+								<img src="img/app-store.png" alt="">
+							</a>
+							<a href="#" class="footer__app">
+								<img src="img/google-play.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="row">
+						<div class="col-6">
+							<h4 class="footer__title">About</h4>
+							<div class="footer__list">
+								<a href="#">Company</a>
+								<a href="#">Press</a>
+								<a href="#">Terms & Conditions</a>
+								<a href="#">Privacy Policy</a>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<h4 class="footer__title">Ride</h4>
+							<div class="footer__list">
+								<a href="#">Drive</a>
+								<a href="#">Cities</a>
+								<a href="#">Help</a>
+								<a href="#">Safety</a>
+								<a href="#">Login</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-3">
+					<h4 class="footer__title">Connect</h4>
+					<div class="footer__social">
+						<a href="#"><img src="img/facebook.png" alt=""></a>
+						<a href="#"><img src="img/twitter.png" alt=""></a>
+						<a href="#"><img src="img/linkedin1.png" alt=""></a>
+						<a href="#"><img src="img/instagram1.png" alt=""></a>
+					</div>
+				</div>
+
+				<div class="col hidden-mobile">
+					<div class="footer__downside">
+						<div>
+							<span class="footer__copyright">All Rights Reserved</span>
+							<span class="footer__copyright">© CopyRighted 2018</span>
+						</div>
+
+						<div>
+							<span class="footer__copyright">www.rideQudos.com</span>
+						</div>
+
+						<div>
+							<a href="#" class="footer__link">Terms and Conditions</a>
+							<a href="#" class="footer__link">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="visible-mobile footer__copyright text-center" id="mobile__footer__copyright">© Copyrights 2019</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

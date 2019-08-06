@@ -1,0 +1,230 @@
+@media (max-width: 1024px) {
+    .footer {
+        padding-top: 5%;
+        overflow: hidden;
+        background-image: url(../img/footer-background.jpg);
+        background-size: contain;
+        background-position-y: -1vh;
+        height: 40vh;
+        .container {
+            position: relative;
+            top: 50px;
+            height: 34vh;
+            .footer__logo {
+                width: 15%;
+                margin-bottom: 40px;
+            }
+
+            .footer__text {
+                p:nth-child(2) {
+                    margin: 25px 0;
+                    font-weight: 700;
+                    color: $qudos-blue;
+                }
+            }
+
+            .footer__title {
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+
+            .footer__list {
+                a {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .footer__social {
+                width: 90%;
+                padding: 0 5px;
+
+                a {
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+
+            #mobile__footer__copyright {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .footer {
+        padding-top: 0;
+        background-position-y: 35vh;
+        height: 70vh;
+
+        .container {
+            height: 67.8vh;
+            .footer__logo {
+                width: 25%;
+            }
+
+            .footer__social {
+                width: 35%;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        background-position-y: 38vh;
+        height: 80vh;
+
+        .container {
+            height: 77.2vh;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        background-position-y: 450px;
+        height: 820px;
+
+        .container {
+            height: 218.5vh;
+            .footer__logo {
+                width: 28%;
+            }
+
+            .footer__social {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        background-position-y: 45vh;
+        height: 78vh;
+
+        .container {
+            height: 75.5vh;
+            .footer__logo {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        background-position-y: 50vh;
+        height: 82vh;
+
+        .container {
+            height: 79vh;
+            .footer__logo {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .footer {
+        background-position-y: 70vh;
+        height: 104vh;
+
+        .container {
+            height: 100vh;
+            .footer__logo {
+                width: 40%;
+                margin-bottom: 20px;
+            }
+
+            .footer__social {
+                width: 65%;
+            }
+        }
+    }
+}
+
+@media (max-width: 412px) {
+    .footer {
+        background-position-y: 66vh;
+        height: 100vh;
+        .container {
+            top: 30px;
+            height: 96vh;
+            .footer__social {
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media (max-width: 384px) {
+    .footer {
+        background-position-y: 75vh;
+        height: 110vh;
+
+        .container {
+            top: 50px;
+            height: 106.3vh;
+            .footer__logo {
+                width: 40%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        background-position-y: 62vh;
+        height: 90vh;
+
+        .container {
+            height: 86.5vh;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .footer {
+        background-position-y: 75vh;
+        height: 110vh;
+
+        .container {
+            top: 30px;
+            height: 105.2vh;
+            .footer__logo {
+                width: 35%;
+                margin-bottom: 10px;
+            }
+
+            .footer__social {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        background-position-y: 90vh;
+        height: 125vh;
+
+        .container {
+            height: 120vh;
+            .footer__logo {
+                width: 40%;
+                margin-bottom: 10px;
+            }
+
+            .footer__social {
+                width: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.edit__page {
+    background-color: white;
+    .edit__container {
+
+        margin: 5% 0;
+
+        ::-webkit-input-placeholder {
+            font-size: 14px;
+            color: #BBB;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            font-size: 14px;
+            color: #BBB;
+            opacity: 1;
+        }
+
+        :-ms-input-placeholder {
+            font-size: 14px;
+            color: #BBB;
+        }
+
+        .edit__forms {
+            #phone {
+                padding: 0 50px;
+            }
+
+            #imageButton {
+                color: #BBB;
+                opacity: 1;
+                height: 42px;
+                text-align: left;
+                background-color: white;
+                padding-top: 10px;
+                font-size: 14px;
+                i {
+                    color: $qudos-darkgrey;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+
+            input {
+                height: 40px;
+                border-radius: .25rem;
+                padding: 0 45px;
+                border: 1px solid #CCC;
+            }
+
+            label {
+                font-weight: 400;
+                border: 0;
+            }
+
+            textarea {
+                min-height: 170px;
+            }
+
+            button {
+                margin: 0 2%;
+                height: 40px;
+                border-radius: .25rem;
+                color: white;
+                background-color: $qudos-blue;
+            }
+
+            .small-label {
+                font-size: 12px;
+                color: $qudos-darkblue;
+            }
+
+            .iti {
+                display: inline;
+                #phone {
+                    padding-left: 45px;
+                }
+            }
+
+            .form-group {
+                h3 {
+                    margin: 30px 0 0 0;
+                }
+
+                .form-icons {
+                    /* enable absolute positioning */
+                    .inner-addon {
+                        position: relative;
+
+                        .fal {
+                            font-size: 14px;
+                            position: absolute;
+                            padding: 13px 0 0 18px;
+                            pointer-events: none;
+                        }
+
+                        .fa-map-marker-alt {
+                            position: absolute;
+                            padding: 13px 0 0 20px;
+                            pointer-events: none;
+                        }
+
+                        .fa-user {
+                            position: absolute;
+                            padding: 13px 0 0 20px;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

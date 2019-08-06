@@ -1,0 +1,40 @@
+// buttons
+@mixin qudos-primary-button {
+    transition: 0.5s;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: $qudos-blue;
+    &:hover {
+        color: white;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+@mixin qudos-secondary-button {
+    transition: 0.5s;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: white;
+    &:hover {
+        color: white;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin qudos-tertiary-button {
+    transition: 0.5s;
+    width: 150px;
+    height: 40px;
+    color: $qudos-darkgrey;
+    background-size: 200% auto;
+    background-color: white;
+    border: 1px solid $qudos-lightgrey;
+    &:focus {
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,603 @@
+@media (max-width: 1440px) {
+    .page {
+        padding-bottom: 0;
+    }
+
+    .tab-content {
+        // width: 100%;
+
+        .tab-pane {
+            ul.col.nav {
+                li {
+                    a#qn-create-groups-tab {
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 5vw;
+
+                        i {
+                            position: relative;
+                            left: -4.7px;
+                            top: -3.1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /** Create Groups button **/
+    #qn-create-groups-tab.btn {
+        background-color: $qudos-blue;
+        padding: 8px 13px;
+        color: white;
+
+        &:focus {
+            background-color: $qudos-darkblue;
+        }
+    }
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+        /* Styles for wrapping the search box */
+        width: 100%;
+        margin: 20px auto;
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            ::-webkit-input-placeholder {
+                opacity: .3;
+            }
+
+            :-moz-placeholder {
+                /* Firefox 18- */
+                opacity: .3;
+            }
+
+            ::-moz-placeholder {
+                /* Firefox 19+ */
+                opacity: .3;
+            }
+
+            :-ms-input-placeholder {
+                opacity: .3;
+            }
+
+            .form-control {
+                font-size: 18px;
+                height: 35px;
+                padding-top: 0px;
+                padding-left: 30px;
+                border-radius: 20px;
+            }
+
+            .form-control-feedback {
+                font-size: 18px;
+                color: #aaa;
+                top: 30px;
+                left: 20px;
+            }
+
+            .form-control-hover-icon {
+                width: 85.5vw;
+
+                .filter-icon {
+                    margin-top: -51.5px;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    #groups-network--create {
+
+        /** Create Groups Stylings **/
+        .qn__create-groups {
+            padding-top: 1vh;
+            padding-bottom: 3rem;
+
+            .qn__create-groups-head {
+                text-align: center;
+
+                .image-upload>input {
+                    display: none;
+
+                    svg {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .qn__create-groups-form {
+                form {
+                    .qudosfaves__searchbar {
+
+                        .form-control-feedback {
+                            margin-top: 0;
+                            left: 5px;
+                        }
+
+                        .form-control-hover-icon {
+                            right: 8px;
+
+                            .filter-icon {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/** ONLY 1024 pixels **/
+@media (width: 1024px) {
+    .page {
+        padding-bottom: 0;
+    }
+
+    .visible-mobile {
+        .nav-tabs {
+            width: 44vw;
+            margin-left: 15px;
+        }
+    }
+
+    .tab-content {
+        width: 45vw;
+
+        .tab-pane {
+            ul.col.nav {
+                li {
+                    position: relative;
+
+                    a#qn-create-groups-tab {
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 0;
+                        left: 10px;
+
+                        i {
+                            position: relative;
+                            left: -4px;
+                            top: -3px;
+                        }
+                    }
+                }
+
+                #qn-create-groups-li {
+                    margin-left: 0;
+                    width: 10px;
+                }
+            }
+
+            .col-12 {
+                width: 75%;
+                position: relative;
+                left: 52%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .user {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+    }
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+        /* Styles for wrapping the search box */
+        width: 100%;
+        margin: 20px auto;
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            ::-webkit-input-placeholder {
+                opacity: .3;
+            }
+
+            :-moz-placeholder {
+                /* Firefox 18- */
+                opacity: .3;
+            }
+
+            ::-moz-placeholder {
+                /* Firefox 19+ */
+                opacity: .3;
+            }
+
+            :-ms-input-placeholder {
+                opacity: .3;
+            }
+
+            .form-control {
+                font-size: 18px;
+                height: 35px;
+                padding-top: 0px;
+                padding-left: 30px;
+                border-radius: 20px;
+            }
+
+            .form-control-feedback {
+                font-size: 18px;
+                color: #aaa;
+                top: 30px;
+                left: 20px;
+            }
+
+            .form-control-hover-icon {
+                width: 40.2vw;
+
+                .filter-icon {
+                    margin-top: -52px;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    #groups-network--create {
+        left: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        #qn-groups {
+            padding-left: 0;
+            padding-right: 0;
+            /** Create Groups Stylings **/
+            .qn__create-groups {
+                padding-top: 1vh;
+                padding-bottom: 3rem;
+
+                .qn__create-groups-head {
+                    text-align: center;
+
+                    .image-upload>input {
+                        display: none;
+
+                        svg {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .qn__create-groups-form {
+                    form {
+                        #qn-create-group-input {
+                            width: 70%;
+                            text-align: center;
+                            border-top-width: 0;
+                            border-left-width: 0;
+                            border-right-width: 0;
+                            margin: 0 auto;
+                            border-radius: 0;
+                            box-shadow: none;
+                        }
+
+                        .qudosfaves__searchbar {
+                            .form-control {
+                                font-size: 16px;
+                                padding-left: 3rem;
+                            }
+
+                            ::-webkit-input-placeholder {
+                                width: 40%;
+                                text-align: left;
+                                opacity: .3;
+                            }
+
+                            :-moz-placeholder {
+                                /* Firefox 18- */
+                                text-align: left;
+                                opacity: .3;
+                            }
+
+                            ::-moz-placeholder {
+                                /* Firefox 19+ */
+                                text-align: left;
+                                opacity: .3;
+                            }
+
+                            :-ms-input-placeholder {
+                                text-align: left;
+                                opacity: .3;
+                            }
+
+                            .form-control-feedback {
+                                margin-top: 0;
+                                text-align: center;
+                                left: 5px;
+                            }
+
+                            .form-control-hover-icon {
+                                width: 26vw;
+                                text-align: end;
+
+                                .filter-icon {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .tab-content {
+        width: 100vw;
+
+        .tab-pane {
+            .container {
+                .col-12 {
+                    width: 50%;
+                    position: relative;
+                    left: 25%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+        .has-search {
+            .form-control-hover-icon {
+                .filter-icon {
+                    margin-top: -51.68px;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    #groups-network--create {
+        /** Create Groups Stylings **/
+        .qn__create-groups {
+            .qn__create-groups-form {
+                form {
+                    .qudosfaves__searchbar {
+
+                        .form-control-feedback {
+                            margin-top: -20px;
+                            left: 5px;
+                        }
+
+                        .form-control-hover-icon {
+                            right: 8px;
+                            .filter-icon {
+                                margin-top: -40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .tab-content {
+        width: 100vw;
+
+        .tab-pane {
+            .container {
+                .col-12 {
+                    width: 100%;
+                    position: relative;
+                    left: 0;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            .form-control-hover-icon {
+                width: 89vw;
+            }
+        }
+    }
+
+    .qn__create-groups {
+        .qn__create-groups-form {
+            form {
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 640px) {
+    .tab-content {
+        .tab-pane {
+            .container {
+                .col-xl-12 {
+                    width: 50%;
+                    position: relative;
+                    left: 50;
+                    transform: translateX(50%);
+                }
+            }
+        }
+    }
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            .form-control-hover-icon {
+                width: 78.8vw;
+                .filter-icon {
+                    margin-top: -51.68px;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .tab-content {
+        .tab-pane {
+            .container {
+                .col-xl-12 {
+                    width: 50%;
+                    position: relative;
+                    left: 50;
+                    transform: translateX(50%);
+                }
+            }
+        }
+    }
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            .form-control-hover-icon {
+                width: 84vw;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .tab-content {
+        .tab-pane {
+            .container {
+                .col-xl-12 {
+                    width: 100%;
+                    position: relative;
+                    left: 0;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            .form-control-hover-icon {
+                width: 92vw;
+            }
+        }
+    }
+}
+
+@media(max-width: 414px) {
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            .form-control-hover-icon {
+                width: 91vw;
+            }
+        }
+    }
+
+    .qn__create-groups {
+        .qn__create-groups-form {
+            form {
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 384px) {
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            .form-control-hover-icon {
+                width: 90.5vw;
+            }
+        }
+    }
+
+    .qn__create-groups {
+        .qn__create-groups-form {
+            form {
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        right: 8px;
+                        top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 360px) {
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            .form-control-hover-icon {
+                width: 90vw;
+            }
+        }
+    }
+}
+@media(max-width: 320px) {
+    .tab-content {
+        width: 100vw;
+
+        .tab-pane {
+            .container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    /** Qudos Searchbar Stylings **/
+    .qudosfaves__searchbar {
+
+        /* Bootstrap 4 text input with search icon */
+        .has-search {
+            .form-control-hover-icon {
+                width: 88vw;
+            }
+        }
+    }
+
+    .qn__create-groups {
+        .qn__create-groups-form {
+            form {
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

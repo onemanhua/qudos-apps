@@ -1,0 +1,334 @@
+@media (max-width: 800px) {
+    .header__content__re--network {
+        height: 53px;
+
+        .header__re--network {
+            .header__timeline-mob {
+                position: inherit;
+            }
+        }
+    }
+
+    .page__re--network {
+        .network__tabs {
+            .results__content--re--network {
+                .row {
+                    .user {
+                        margin-top: 20px;
+                        padding: .5rem 1rem;
+
+                        .user__img {
+                            margin-right: 20px;
+
+                            img {
+                                width: 82px;
+                                height: 82px;
+                            }
+                        }
+
+                        .user__meta {
+                            width: 52%;
+
+                            h3 {
+                                font-weight: 700;
+                                font-size: 22px;
+                                margin-top: 5px;
+                                margin-bottom: 0;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                            }
+
+                            .user__stats {
+                                margin-top: 0;
+
+                                svg {
+                                    margin-top: 3.5px;
+                                    width: 16px;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .visible-mobile {
+                            width: 1%;
+
+                            .user__actions {
+                                svg {
+                                    width: 28px;
+                                    height: 28px;
+                                }
+
+                                .anchor-head {
+                                    margin-right: .5rem;
+                                }
+
+                                a {
+                                    background: transparent;
+                                    border: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #qn-grp-explore {
+                .results__content--re--network {
+                    .row {
+                        .user {
+                            .user__meta {
+                                width: 50%;
+                            }
+
+                            .visible-mobile {
+                                width: 30%;
+                                margin-left: 29%;
+                                margin-top: -15px;
+
+                                .user__actions {
+                                    .anchor-head {
+                                        font-weight: 700;
+                                        color: $qudos-blue;
+                                        border: 1px solid $qudos-blue;
+                                        font-size: 12px;
+                                        height: 24px;
+                                        padding: 0 2rem;
+                                        margin-right: 10px;
+
+                                        &:hover {
+                                            border: 0;
+                                            color: white;
+                                            background-color: $qudos-blue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .page__re--network {
+        .network__tabs {
+            .results__content--re--network {
+                .row {
+                    .user {
+                        margin-top: 20px;
+                        padding: .5rem 1rem;
+
+                        .user__img {
+                            margin-right: 20px;
+
+                            img {
+                                width: 82px;
+                                height: 82px;
+                            }
+                        }
+
+                        .user__meta {
+                            width: 50%;
+
+                            h3 {
+                                font-weight: 700;
+                                font-size: 22px;
+                                margin-top: 5px;
+                                margin-bottom: 0;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: 16px;
+                            }
+
+                            .user__stats {
+                                margin-top: 0;
+
+                                svg {
+                                    margin-top: 3.5px;
+                                    width: 16px;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .visible-mobile {
+                            width: 1%;
+
+                            .user__actions {
+                                svg {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+
+                                .anchor-head {
+                                    margin-right: 1rem;
+                                }
+
+                                a {
+                                    background: transparent;
+                                    border: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #qn-grp-explore {
+                .results__content--re--network {
+                    .row {
+                        .user {
+                            .user__meta {
+                                width: 42%;
+                            }
+
+                            .visible-mobile {
+                                width: 1%;
+                                margin-left: 0;
+                                margin-top: 0;
+                                .user__actions {
+                                    .anchor-head {
+                                        font-weight: 700;
+                                        color: $qudos-blue;
+                                        border: 1px solid $qudos-blue;
+                                        font-size: 12px;
+                                        height: 24px;
+                                        padding: 0 2rem;
+                                        margin-right: 10px;
+
+                                        &:hover {
+                                            border: 0;
+                                            color: white;
+                                            background-color: $qudos-blue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 384px) {
+    .page__re--network {
+        .network__tabs {
+            .results__content--re--network {
+                .row {
+                    .user {
+                        margin-top: 20px;
+                        padding: .5rem;
+
+                        .user__img {
+                            margin-right: 15px;
+
+                            img {
+                                width: 72px;
+                                height: 72px;
+                            }
+                        }
+
+                        .user__meta {
+                            width: 55%;
+
+                            h3 {
+                                font-weight: 700;
+                                font-size: 20px;
+                                margin-top: 5px;
+                                margin-bottom: 0;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: 14px;
+                            }
+
+                            .user__stats {
+                                margin-top: 0;
+
+                                svg {
+                                    margin-top: 3px;
+                                    width: 12px;
+                                }
+
+                                span {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        .visible-mobile {
+                            width: 1%;
+
+                            .user__actions {
+                                svg {
+                                    width: 24px;
+                                    height: 24px;
+                                }
+
+                                .anchor-head {
+                                    margin-right: .75rem;
+                                }
+
+                                a {
+                                    background: transparent;
+                                    border: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #qn-grp-explore {
+                .results__content--re--network {
+                    .row {
+                        .user {
+                            .user__meta {
+                                width: 46%;
+                            }
+
+                            .visible-mobile {
+                                width: 1%;
+                                margin-left: 0;
+                                margin-top: 0;
+
+                                .user__actions {
+                                    .anchor-head {
+                                        font-weight: 700;
+                                        color: $qudos-blue;
+                                        border: 1px solid $qudos-blue;
+                                        font-size: 12px;
+                                        height: 24px;
+                                        padding: 0 1rem;
+                                        margin-right: 10px;
+
+                                        &:hover {
+                                            border: 0;
+                                            color: white;
+                                            background-color: $qudos-blue;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

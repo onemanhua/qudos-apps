@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+	<!--CSS-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.all.css">
+	<link rel="stylesheet" href="css/intlTelInput.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Custom CSS -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/custom.min.css">
+	<title>QudosList™</title>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__content">
+						<a href="#" class="header__logo">
+							<img src="img/logo--white.png" alt="">
+						</a>
+
+						<form action="#" class="header__form">
+							<input type="text" placeholder="Search">
+						</form>
+
+						<nav class="header__nav">
+							<div class="header__nav-title">
+								<i class="fal fa-long-arrow-left"></i>
+								Menu
+							</div>
+
+							<ul class="header__nav-list">
+								<li>
+									<a href="#">
+										<i class="fal fa-home"></i>
+										<span>Home</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="fal fa-bullseye"></i>
+										<span>My Qudos</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#!/network">
+										<i class="fal fa-user-friends"></i>
+										<span>Network</span>
+									</a>
+								</li>
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fa-user"></i>
+										<span>Profile</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="fal fa-comments-alt"></i>
+										<span class="visible-mobile">Messaging</span>
+									</a>
+								</li>
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fa-bell"></i>
+										<span>Notification</span>
+									</a>
+								</li>
+
+								<div class="hidden-mobile dropdown">
+									<button class="header__not-btn" type="button" id="dropdownMenuButton"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span>12</span>
+										<i class="fal fa-bell"></i>
+									</button>
+
+									<div class="notification-drop dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<div class="notification-drop__header">
+											<span>Notifications</span>
+											<span>349</span>
+										</div>
+
+										<div class="notification-drop__body">
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+
+											<div class="notification">
+												<div class="notification__img">
+													<img src="img/avatar.jpg" alt="">
+												</div>
+
+												<div class="notification__text">
+													<span>Fauzan Khan</span> promoted your answer
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="hidden-mobile">
+									<a href="#" class="header__timeline-desk">
+										<img src="img/avatar.jpg" alt="">
+									</a>
+								</div>
+
+								<div class="hidden-mobile dropdown">
+									<button class="header__more" type="button" id="dropdownMenuButton2"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-caret-down"></i>
+									</button>
+
+									<div class="header__more-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+										<a href="#">
+											<i class="fal fa-user"></i>
+											<span>Profile</span>
+										</a>
+										<a href="#">
+											<i class="fal fal fa-power-off"></i>
+											<span>Sign Out</span>
+										</a>
+									</div>
+								</div>
+
+
+								<li class="visible-mobile">
+									<a href="#">
+										<i class="fal fal fa-power-off"></i>
+										<span class="visible-mobile">Sign Out</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<a href="#" class="header__timeline-mob">
+							<img src="img/avatar.jpg" alt="">
+						</a>
+
+						<button class="header__menu" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="sign">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-10 offset-xl-1">
+					<div class="sign__content">
+						<div class="row">
+							<div class="popup-main-content">
+								<!--Start Inner Row-->
+								<div id="main-login" class="row">
+
+									<div class="col-md-6">
+										<h3>Log In</h3>
+										Qudos inspires people from all walks of life to share their ideas and
+										experiences.
+									</div>
+
+									<div class="col-md-6">
+										<div class="login-form">
+											<form name="login">
+												<label>Mobile Number</label>
+												<div class="row-input">
+													<input class="mobile" id="mobile" type="tel" inputmode="numeric"
+														placeholder="Please enter you mobile number">
+												</div>
+												<label>Password</label>
+												<div class="row-input">
+													<input id="password" value="" name="password" class="password"
+														name="password" type="password" placeholder="Enter Password">
+												</div>
+												<button class="submit" type="button" onclick="submitContactForm()">Sign
+													In</button>
+											</form>
+											<script>
+												function submitContactForm() {
+													var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+													var mobile = $('#mobile').val();
+													var password = $('#password').val();
+
+													if (mobile.trim() == '') {
+														alert('Please enter your Mobile.');
+														$('#mobile').focus();
+														return false;
+													} else if (password.trim() == '') {
+														alert('Please enter your Password.');
+														$('#password').focus();
+														return false;
+													}
+												}
+											</script>
+
+											<div class="row-forget-pass">
+												<div class="left-align">
+													<a id="forget" href="#">Forgot Password?</a>
+												</div>
+												<div class="right-align">
+													New to this?<a href="index.html"> <strong>Signup</strong></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--End inner Row-->
+
+								<!--Start Inner Row1-->
+								<div id="reset1" class="row hidden">
+									<div class="col-md-6">
+										<h3>Reset Password</h3>
+										Enter your number and we will send you a OTP to reset your password.
+									</div>
+
+									<div class="col-md-6">
+										<div class="login-form">
+											<form name="login">
+												<label>Mobile Number</label>
+												<div class="row-input">
+													<input class="mobile" id="mobile1" type="tel" inputmode="numeric"
+														placeholder="Please enter your mobile number">
+												</div>
+												<button id="reset-2" class="submit top-margin" type="button"
+													onclick="reset1()">Send OTP</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<!--Start Inner Row1-->
+
+								<!--Start Inner Row2-->
+								<div id="reset2" class="row hidden">
+									<div id="main-hidden" class="col-md-5">
+										<h3>Reset Password</h3>
+									</div>
+
+									<div id="main-hidden1" class="col-md-7">Qudos continues to act as the catalyst for
+										lasting connections between socially aware individuals. Hang on there, you will
+										get back in track in no time.</div>
+
+									<div class="col-md-6">
+										<div class="login-form"><br>
+											<p>Confirm your mobile number to reset your password</p>
+											<form name="login">
+												<label>Enter OTP sent to your Mobile number</label>
+												<div class="row-input">
+													<input id="otp" type="tel" name="otp" inputmode="numeric"
+														placeholder="0000" required>
+													<div class="row row-input a-color">
+														<div class="col-5"><a href="#">Resend OTP</a></div>
+														<div class="col-7"><a href="#">Change Mobile number</a></div>
+													</div>
+												</div>
+												<button id="reset-3" class="submit top-margin" type="button"
+													onclick="resetotp()">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<!--Start Inner Row2-->
+
+								<!--Start Inner Row3-->
+								<div id="reset3" class="row hidden">
+									<div class="col-md-6">
+										<h3>Reset Password</h3>Qudos is a socially conscious technology company
+										empowering people from all walks of life to share and use our platform.
+									</div>
+
+									<div class="col-md-6">
+										<div class="login-form">
+											<form name="login">
+												<label>Enter New Password</label>
+												<div class="row-input">
+													<input id="passwordn" value="" name="passwordn" class="password"
+														type="password" placeholder="Enter new password">
+												</div>
+												<label>Confirm New Password</label>
+												<div class="row-input">
+													<input id="passwordnc" value="" name="passwordnc" class="password"
+														type="password" placeholder="Enter again new password">
+												</div>
+												<button id="reset-4" class="submit" type="button"
+													onclick="resetpass()">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<!--Start Inner Row3-->
+
+								<!--Start Inner Row4-->
+								<div id="reset4" class="row row-input hidden">
+									<div class="col-md-12">
+										<p class="small-show"><img src="img/tick.png" alt="sucess"></p>
+									</div>
+									<div class="col-md-6">
+										<h3>Reset Successfully</h3>
+										<p class="top-margin">Your Password has been successfuly changed, you can now
+											continue to login.</p>
+										<div class="row clear">
+											<div class="col-md-12">
+												<a id="login-main" href="login.html" class="submit-login">Go to
+													Login</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-6 small-hide">
+										<p align="center"><img src="img/tick.png" width="180" height="180" alt="sucess">
+										</p>
+									</div>
+								</div>
+								<!--End Inner Row4-->
+							</div>
+							<!--End Main Content Popup-->
+						</div>
+						<!--End Row-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<svg class="QL_LOGO_ROCKWELL footer__logo"></svg>
+				</div>
+
+				<div class="col-12 col-lg-5">
+					<div class="row">
+						<div class="col-6 col-lg-7">
+							<h4 class="footer__title">Reach us</h4>
+							<div class="footer__text">
+								<p>1969, Steinway street, long Island City, NewYork. NY 1105</p>
+								<p>(718)-360-5010</p>
+								<p>support@Qudos.us</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-5">
+							<h4 class="footer__title">Our Apps</h4>
+							<a href="#" class="footer__app">
+								<img src="img/app-store.png" alt="">
+							</a>
+							<a href="#" class="footer__app">
+								<img src="img/google-play.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="row">
+						<div class="col-6">
+							<h4 class="footer__title">About</h4>
+							<div class="footer__list">
+								<a href="#">Company</a>
+								<a href="#">Press</a>
+								<a href="#">Terms & Conditions</a>
+								<a href="#">Privacy Policy</a>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<h4 class="footer__title">Ride</h4>
+							<div class="footer__list">
+								<a href="#">Drive</a>
+								<a href="#">Cities</a>
+								<a href="#">Help</a>
+								<a href="#">Safety</a>
+								<a href="#">Login</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-3">
+					<h4 class="footer__title">Connect</h4>
+					<div class="footer__social">
+						<a href="#"><img src="img/facebook.png" alt=""></a>
+						<a href="#"><img src="img/twitter.png" alt=""></a>
+						<a href="#"><img src="img/linkedin1.png" alt=""></a>
+						<a href="#"><img src="img/instagram1.png" alt=""></a>
+					</div>
+				</div>
+
+				<div class="col hidden-mobile">
+					<div class="footer__downside">
+						<div>
+							<span class="footer__copyright">All Rights Reserved</span>
+							<span class="footer__copyright">© CopyRighted 2018</span>
+						</div>
+
+						<div>
+							<span class="footer__copyright">www.rideQudos.com</span>
+						</div>
+
+						<div>
+							<a href="#" class="footer__link">Terms and Conditions</a>
+							<a href="#" class="footer__link">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="visible-mobile footer__copyright text-center" id="mobile__footer__copyright">© Copyrights 2019</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		$(".inputs").keyup(function () {
+			if (this.value.length == this.maxLength) {
+				$(this).next('.inputs').focus();
+			}
+		});
+
+		$("#mobile").intlTelInput({
+			// allowDropdown: false,
+			// autoHideDialCode: false,
+			// autoPlaceholder: "off",
+			// dropdownContainer: "body",
+			// excludeCountries: ["us"],
+			// formatOnDisplay: false,
+			// geoIpLookup: function(callback) {
+			//   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+			//     var countryCode = (resp && resp.country) ? resp.country : "";
+			//     callback(countryCode);
+			//   });
+			// },
+			// hiddenInput: "full_number",
+			// initialCountry: "auto",
+			// nationalMode: false,
+			// onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+			// placeholderNumberType: "MOBILE",
+			// preferredCountries: ['cn', 'jp'],
+			// separateDialCode: true,
+			utilsScript: "js/utils.js"
+		});
+
+		$("#mobile1").intlTelInput({
+			// allowDropdown: false,
+			// autoHideDialCode: false,
+			// autoPlaceholder: "off",
+			// dropdownContainer: "body",
+			// excludeCountries: ["us"],
+			// formatOnDisplay: false,
+			// geoIpLookup: function(callback) {
+			//   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+			//     var countryCode = (resp && resp.country) ? resp.country : "";
+			//     callback(countryCode);
+			//   });
+			// },
+			// hiddenInput: "full_number",
+			// initialCountry: "auto",
+			// nationalMode: false,
+			// onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+			// placeholderNumberType: "MOBILE",
+			// preferredCountries: ['cn', 'jp'],
+			// separateDialCode: true,
+			utilsScript: "js/utils.js"
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(function () {
+			$("#forget").click(function () {
+				$("#main-login").addClass("hidden");
+				$("#reset1").removeClass("hidden");
+			});
+
+			$("#reset-2").click(function () {
+				var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+				var mobile1 = $('#mobile1').val();
+
+				if (mobile1.trim() == '') {
+					alert('Please enter your Mobile Number.');
+					$('#mobile1').focus();
+					return false;
+				}
+
+				$("#main-login").addClass("hidden");
+				$("#reset1").addClass("hidden");
+				$("#reset2").removeClass("hidden");
+			});
+
+			$("#reset-3").click(function () {
+				var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+				var otp = $('#otp').val();
+
+				if (otp.trim() == '') {
+					alert('Please enter OTP sent to your Mobile Number.');
+					$('#otp').focus();
+					return false;
+				}
+
+				$("#main-login").addClass("hidden");
+				$("#reset1").addClass("hidden");
+				$("#reset2").addClass("hidden");
+				$("#reset3").removeClass("hidden");
+			});
+
+			$("#reset-4").click(function () {
+				var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+
+				var passwordn = $('#passwordn').val();
+				var passwordnc = $('#passwordnc').val();
+
+				if (passwordn.trim() == '') {
+					alert('Please enter your New Password.');
+					$('#passwordn').focus();
+					return false;
+				} else if (passwordnc.trim() == '') {
+					alert('Please enter your Confirm New Password.');
+					$('#passwordnc').focus();
+					return false;
+				} else if (passwordnc.trim() != passwordn.trim()) {
+					alert('Please enter your Confirm New Password the same to New password.');
+					$('#passwordnc').focus();
+					return false;
+				}
+				$("#main-login").addClass("hidden");
+				$("#reset1").addClass("hidden");
+				$("#reset2").addClass("hidden");
+				$("#reset3").addClass("hidden");
+				$("#reset4").removeClass("hidden");
+			});
+
+			$("#login-main").click(function () {
+				$("#main-login").removeClass("hidden");
+				$("#reset1").addClass("hidden");
+				$("#reset2").addClass("hidden");
+				$("#reset3").addClass("hidden");
+				$("#reset4").addClass("hidden");
+				$("#reset5").addClass("hidden");
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+@media (max-width: 1440px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .btn-toolbar {
+                    .qudos-primary-btn {
+                        @include qudos-primary-button;
+                        width: 47%;
+                    }
+    
+                    .qudos-secondary-btn {
+                        @include qudos-tertiary-button;
+                        width: 47%;
+                    }
+                }
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 37.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1280px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 40vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .btn-toolbar {
+                    .qudos-primary-btn {
+                        @include qudos-primary-button;
+                        width: 46%;
+                    }
+    
+                    .qudos-secondary-btn {
+                        @include qudos-tertiary-button;
+                        width: 46%;
+                    }
+                }
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 33.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .btn-toolbar {
+                    .qudos-primary-btn {
+                        @include qudos-primary-button;
+                        width: 48%;
+                    }
+    
+                    .qudos-secondary-btn {
+                        @include qudos-tertiary-button;
+                        width: 48%;
+                    }
+                }
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 79vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 94vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 92vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 414px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 91vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 384px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .btn-toolbar {
+                    .qudos-primary-btn {
+                        @include qudos-primary-button;
+                        width: 47%;
+                    }
+    
+                    .qudos-secondary-btn {
+                        @include qudos-tertiary-button;
+                        width: 47%;
+                    }
+                }
+                .qudosfaves__searchbar {
+                    .form-control-hover-icon {
+                        width: 90vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    #myGroup-networkTabContent {
+        #qn-create-groups {
+            .qn__create-groups-form {
+                .qudosfaves__searchbar {
+                    ::-webkit-input-placeholder {
+                        font-size: 14px;
+                    }
+        
+                    :-moz-placeholder {
+                        /* Firefox 18- */
+                        font-size: 14px;
+                    }
+        
+                    ::-moz-placeholder {
+                        /* Firefox 19+ */
+                        font-size: 14px;
+                    }
+        
+                    :-ms-input-placeholder {
+                        font-size: 14px;
+                    }
+                    .form-control-hover-icon {
+                        width: 88vw;
+                    }
+                }
+            }
+        }
+    }
+}
