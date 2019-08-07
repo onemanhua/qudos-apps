@@ -39,6 +39,35 @@
                 }
             }
         }
+        ul.col.nav {
+            height: 56px;
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+        
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: 10px;
+                    color: $qudos-grey;
+                    padding: 0 10px;
+                    i {
+                        font-size: 18px;
+                    }
+                }
+                a.active {
+                    color: $qudos-darkblue;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 0 30px;
+                    i {
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -83,41 +112,21 @@
 }
 
 ul.col.nav {
-    height: 56px;
-
     li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
         a {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 10px;
+            font-size: 14px;
             color: $qudos-grey;
-            padding: 0 10px;
-
             &:hover,
             &:focus {
                 background-color: transparent;
-            }
-
-            i {
-                font-size: 18px;
             }
         }
     }
 
     li {
         a.active {
-            color: $qudos-darkblue;
-            font-size: 16px;
+            color: $qudos-blue;
             font-weight: 600;
-            padding: 0 30px;
-            i {
-                font-size: 32px;
-            }
         }
 
         a#qn-create-groups-tab {
@@ -178,7 +187,31 @@ ul.col.nav {
 
     /* Bootstrap 4 text input with search icon */
     .has-search {
+        ::-webkit-input-placeholder {
+            font-size: 14px;
+            position: relative;
+            top: -2px;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            font-size: 14px;
+            position: relative;
+            top: -2px;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            font-size: 14px;
+        }
+
+        :-ms-input-placeholder {
+            font-size: 14px;
+            position: relative;
+            top: -2px;
+        }
         .form-control {
+            border: 1px solid $qudos-grey;
             height: 35px;
             padding-left: 2.375rem;
             border-radius: 20px;
@@ -209,7 +242,6 @@ ul.col.nav {
 
 #groups-network--create {
     position: relative;
-    top: -75px;
     z-index: 9;
 
     /** Create Groups Stylings **/

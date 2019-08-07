@@ -76,7 +76,9 @@
                 }
                 .qudosfaves__searchbar {
                     .form-control-hover-icon {
-                        width: 79vw;
+                        .filter-icon {
+                            margin-top: -45px;
+                        }
                     }
                 }
             }
