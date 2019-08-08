@@ -228,47 +228,6 @@
                     <ui-view></ui-view>
                 </div>
             </div> <!-- Top Nav icon end -->
-        <!-- Settings Modal start -->
-		<div class="modal" id="settingsModal" tabindex="-1" role="dialog">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="settingsModalCenterTitle">Settings Options</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="privacySettingsSelect">Account Privacy</label>
-								<select class="form-control" id="privacySettings">
-									<option>Public (defautl)</option>
-									<option>Private</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label for="languageSettingsSelect">Language</label>
-								<select class="form-control" id="languageSettings">
-									<option value="en">English (defautl)</option>
-									<option value="kr">Korean</option>
-									<option value="mr">Mandarin</option>
-									<option value="fr">French</option>
-									<option value="gm">German</option>
-									<option value="pht">Filipino (Tagalog)</option>
-									<option value="phb">Filipino (Bisaya)</option>
-								</select>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn qudos-primary-btn" data-dismiss="modal">Sign-out</button>
-						<button type="button" class="btn qudos-tertiary-btn">Save</button>
-					</div>
-				</div>
-			</div>
-		</div><!-- Settings Modal start -->
-
         <div class="row">
             <div class="col-12 col-lg-3 col-xl-2 page__sidebar">
                 <div class="summary">
@@ -467,10 +426,9 @@
 	</footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <script src="js/custom-file-input.js"></script>
-
     <!-- // If you'd like to use jQuery, check out js/jquery.custom-file-input.js
 		<script src="js/jquery-v1.min.js"></script>
 		<script src="js/jquery.custom-file-input.js"></script>
