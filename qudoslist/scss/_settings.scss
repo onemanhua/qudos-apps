@@ -1,0 +1,58 @@
+.modal {
+    .modal-content {
+        border-radius: 8px;
+        .modal-body {
+            p {
+                color: $qudos-darkgrey;
+                font-weight: 700;
+                font-size: 20px;
+                border-bottom: 1px solid $qudos-grey;
+            }
+        }
+    }
+    .qudos-primary-btn {
+        @include qudos-primary-button;
+        font-size: 14px;
+        width: 100px;
+        height: 30px;
+    }
+    .qudos-fourth-btn {
+        @include qudos-fourth-button;
+        font-size: 14px;
+        width: 100px;
+        height: 30px;
+    }
+}
+.settings--page {
+    .container {
+        max-width: 600px;
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        form {
+            label {
+                font-size: 16px;
+            }
+            i {
+                position: relative;
+                float: right;
+                font-size: 20px;
+                align-self: flex-end;  
+                top: 36px;
+                right: 10px;
+            }
+            select {
+                height: 35px;
+            }
+            .form-control {
+                font-size: 14px;
+            }
+        }
+        button {
+            @include qudos-fourth-button;
+            font-size: 14px;
+            height: 30px;
+        }
+    }
+}

@@ -219,58 +219,15 @@
 			<div class="col-12 p-0">
 				<div id="body"></div>
 				<div class="top__nav d-flex justify-content-between border-bottom-0" ng-show="mobileView && is_auth">
-					<a href="home.html" ui-sref="home"><svg class="mx-auto list-icon top__nav-icon"></svg></a>
+					<a href="home.html" ui-sref="home"><svg class="mx-auto list-icon-uf top__nav-icon"></svg></a>
 					<a href="#" ui-sref="network"><svg class="mx-auto network-icon top__nav-icon"></s></a>
-					<a href="messages.html"><svg class="mx-auto message-icon top__nav-icon"></svg></a>
-					<a href="notifications.html"><svg class="mx-auto notification-icon top__nav-icon"></svg></a>
-					<a href="settings.html" data-toggle="modal" data-target="#settingsModal"><svg
-							class="mx-auto settings-icon top__nav-icon"></i></a>
+					<a href="messages.html"><svg class="mx-auto message-icon-uf top__nav-icon"></svg></a>
+					<a href="notifications.html"><svg class="mx-auto notification-icon-uf top__nav-icon"></svg></a>
+					<a href="settings.html" data-toggle="modal" data-target="#settingsModal"><svg class="mx-auto settings-icon-uf top__nav-icon"></i></a>
 				</div>
 				<ui-view></ui-view>
 			</div>
-		</div>
-		<!-- Top Nav icon Close -->
-		<!-- Settings Modal start -->
-		<div class="modal" id="settingsModal" tabindex="-1" role="dialog">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="settingsModalCenterTitle">Settings Options</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="privacySettingsSelect">Account Privacy</label>
-								<select class="form-control" id="privacySettings">
-									<option>Public (defautl)</option>
-									<option>Private</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label for="languageSettingsSelect">Language</label>
-								<select class="form-control" id="languageSettings">
-									<option value="en">English (defautl)</option>
-									<option value="kr">Korean</option>
-									<option value="mr">Mandarin</option>
-									<option value="fr">French</option>
-									<option value="gm">German</option>
-									<option value="pht">Filipino (Tagalog)</option>
-									<option value="phb">Filipino (Bisaya)</option>
-								</select>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn qudos-primary-btn" data-dismiss="modal">Sign-out</button>
-						<button type="button" class="btn qudos-tertiary-btn">Save</button>
-					</div>
-				</div>
-			</div>
-		</div><!-- Settings Modal start -->
-
+		</div> <!-- Top Nav icon end -->
 		<div class="row">
 			<div class="col-12 col-lg-3 col-xl-2 page__sidebar">
 				<div class="summary">
@@ -302,14 +259,10 @@
 				<!-- Desktop filter search start -->
 				<div class="hidden-mobile filter">
 					<ul class="nav justify-content-start" role="tablist">
-						<li class="nav-item"><a class="nav-link py-0 px-0 active" data-toggle="tab"
-								href="#qudosfave-network"><button>QudosFave™ <span>Drivers</span></button></a></li>
-						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab"
-								href="#network--people"><button>People</button></a></li>
-						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab"
-								href="#network--groups"><button>Groups</button></a></li>
-						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab"
-								href="#network--page"><button>Pages</button></a>
+						<li class="nav-item"><a class="nav-link py-0 px-0 active" data-toggle="tab" href="#qudosfave-network"><button>QudosFave™ <span>Drivers</span></button></a></li>
+						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab" href="#network--people"><button>People</button></a></li>
+						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab" href="#network--groups"><button>Groups</button></a></li>
+						<li class="nav-item"><a class="nav-link py-0 px-0" data-toggle="tab" href="#network--page"><button>Pages</button></a>
 						</li>
 					</ul>
 				</div><!-- Desktop filter search end -->
@@ -317,16 +270,9 @@
 				<span class="visible-mobile">
 					<div class="filter px-0">
 						<ul class="nav justify-content-center" role="tablist">
-							<li class="nav-item text-center"><a class="nav-link py-0 w-100 h-100 active"
-									data-toggle="tab" href="#qudosfave-network"><button class="first-child-btn mx-0"><i
-											class="fas fa-bullseye w-100"></i>My
-										QudosFave™<span>Drivers</span></button></a></li>
-							<li class="nav-item text-center mx-1"><a class="nav-link py-0 w-100 h-100" data-toggle="tab"
-									href="#network--people"><button class="mx-0"><i
-											class="fas fa-user-friends w-100"></i>Friends</button></a></li>
-							<li class="nav-item text-center"><a class="nav-link py-0 w-100 h-100" data-toggle="tab"
-									href="#network--groups"><button class="mx-0"><i
-											class="fas fa-users w-100"></i>Groups</button></a></li>
+							<li class="nav-item text-center"><a class="nav-link py-0 w-100 h-100 active" data-toggle="tab" href="#qudosfave-network"><button class="first-child-btn mx-0"><i class="fas fa-bullseye w-100"></i>My QudosFave™<span>Drivers</span></button></a></li>
+							<li class="nav-item text-center mx-1"><a class="nav-link py-0 w-100 h-100" data-toggle="tab" href="#network--people"><button class="mx-0"><i class="fas fa-user-friends w-100"></i>Friends</button></a></li>
+							<li class="nav-item text-center"><a class="nav-link py-0 w-100 h-100" data-toggle="tab" href="#network--groups"><button class="mx-0"><i class="fas fa-users w-100"></i>Groups</button></a></li>
 						</ul>
 					</div>
 				</span><!-- Mobile filter search end -->
@@ -362,12 +308,8 @@
 								<!-- Mobile navbar view start -->
 								<span class="visible-mobile pb-2 pt-5">
 									<ul class="col nav text-center justify-content-center px-4">
-										<li class="nav-item"><a data-toggle="tab" class="nav-link h-100 active"
-												href="#qudosfave-network--myqudos"><i class="fas fa-user w-100"></i>My
-												QudosFaves™</a></li>
-										<li class="nav-item"><a data-toggle="tab" class="na w-100 h-100"
-												href="#qudosfave-network--explore"><i
-													class="fas fa-compass w-100"></i>Explore</a></li>
+										<li class="nav-item"><a data-toggle="tab" class="nav-link h-100 active" href="#qudosfave-network--myqudos"><i class="fas fa-user w-100"></i>My QudosFaves™</a></li>
+										<li class="nav-item"><a data-toggle="tab" class="na w-100 h-100" href="#qudosfave-network--explore"><i class="fas fa-compass w-100"></i>Explore</a></li>
 									</ul>
 								</span><!-- Mobile navbar view end -->
 								<!-- Qudos searchbar start -->

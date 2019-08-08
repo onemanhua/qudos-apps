@@ -38,3 +38,16 @@
         box-shadow: none;
     }
 }
+
+@mixin qudos-fourth-button {
+    transition: 0.5s;
+    width: 150px;
+    height: 40px;
+    color: $qudos-darkgrey;
+    background-size: 200% auto;
+    background-color: $qudos-lightgrey;
+    border: none;
+    &:focus {
+        box-shadow: none;
+    }
+}
