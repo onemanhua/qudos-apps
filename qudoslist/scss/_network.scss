@@ -50,20 +50,20 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    font-size: 10px;
+                    font-size: 9px;
                     color: $qudos-grey;
                     padding: 0 10px;
                     i {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
                 a.active {
                     color: $qudos-darkblue;
-                    font-size: 16px;
+                    font-size: 12px;
                     font-weight: 600;
                     padding: 0 30px;
                     i {
-                        font-size: 32px;
+                        font-size: 25px;
                     }
                 }
             }
