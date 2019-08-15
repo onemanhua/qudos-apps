@@ -220,10 +220,10 @@
 				<div id="body"></div>
 				<div class="top__nav d-flex justify-content-between border-bottom-0" ng-show="mobileView && is_auth">
 					<a href="home.html" ui-sref="home"><svg class="mx-auto list-icon-uf top__nav-icon"></svg></a>
-					<a href="#" ui-sref="network"><svg class="mx-auto network-icon top__nav-icon"></s></a>
+					<a href="#" ui-sref="network"><svg class="mx-auto network-icon top__nav-icon"></svg></a>
 					<a href="messages.html"><svg class="mx-auto message-icon-uf top__nav-icon"></svg></a>
 					<a href="notifications.html"><svg class="mx-auto notification-icon-uf top__nav-icon"></svg></a>
-					<a href="settings.html"><svg class="mx-auto settings-icon-uf top__nav-icon"></i></a>
+					<a href="settings.html"><svg class="mx-auto settings-icon-uf top__nav-icon"></svg></a>
 				</div>
 				<ui-view></ui-view>
 			</div>
@@ -273,11 +273,10 @@
 				<!-- Mobile filter search start -->
 				<span class="visible-mobile">
 					<div class="filter px-0">
-						<ul class="nav justify-content-center" role="tablist">
+						<ul class="nav justify-content-center w-100" role="tablist">
 							<li class="nav-item text-center"><a class="nav-link py-0 w-100 h-100 active"
 									data-toggle="tab" href="#qudosfave-network"><button class="first-child-btn mx-0"><i
-											class="fas fa-bullseye w-100"></i>My
-										QudosFave™<span>Drivers</span></button></a></li>
+											class="fas fa-bullseye w-100"></i>QudosFave™<span>Drivers</span></button></a></li>
 							<li class="nav-item text-center mx-1"><a class="nav-link py-0 w-100 h-100" data-toggle="tab"
 									href="#network--people"><button class="mx-0"><i
 											class="fas fa-user-friends w-100"></i>Friends</button></a></li>
@@ -329,7 +328,6 @@
 								</span><!-- Mobile navbar view end -->
 								<!-- Qudos searchbar start -->
 								<div class="visible-mobile container">
-									<div class="container">
 										<div class="row">
 											<div class="col">
 												<section class="qudosfaves__searchbar">
@@ -345,8 +343,7 @@
 												</section>
 											</div>
 										</div>
-									</div>
-								</div><!-- Qudos searchbar end -->
+									</div><!-- Qudos searchbar end -->
 								<div class="tab-content">
 									<!-- QudosFave MyQudos tab start -->
 									<div id="qudosfave-network--myqudos" class="tab-pane in active">
@@ -1428,7 +1425,7 @@
 																		<div class="qudosfaves__searchbar">
 																			<div class="form-group has-search">
 																				<span
-																					class="fa fa-search form-control-feedback"></span>
+																					class="fal fa-search form-control-feedback"></span>
 																				<input type="text"
 																					class="form-control pt-1"
 																					placeholder="Search (Spanish, Toyota, etc...)">
