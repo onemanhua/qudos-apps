@@ -151,6 +151,9 @@ ul.col.nav {
     .user__meta {
         h3 {
             margin-top: 1.2rem;
+            a {
+                color: #333;
+            }
         }
 
         h3,
@@ -365,14 +368,14 @@ ul.col.nav {
                     }
 
                     .form-control-feedback {
-                        margin-top: 30px;
+                        margin-top: 16px;
                         text-align: center;
                         left: 35px;
                     }
 
                     .form-control-hover-icon {
                         width: 26.5vw;
-                        top: 24px;
+                        top: 10px;
                         text-align: end;
                     }
                 }

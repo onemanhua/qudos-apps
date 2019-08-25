@@ -116,7 +116,7 @@
                             right: 8px;
 
                             .filter-icon {
-                                margin-top: 0;
+                                margin-top: 5px;
                             }
                         }
                     }
@@ -288,12 +288,12 @@
             .form-control-feedback {
                 font-size: 18px;
                 color: #aaa;
-                top: 30px;
+                top: 15px;
                 left: 20px;
             }
 
             .form-control-hover-icon {
-                width: 40.2vw;
+                width: 43.2vw;
 
                 .filter-icon {
                     margin-top: -52px;
@@ -372,7 +372,7 @@
                             }
 
                             .form-control-feedback {
-                                margin-top: 0;
+                                margin-top: -15px;
                                 text-align: center;
                                 left: 5px;
                             }
@@ -396,7 +396,6 @@
 @media(max-width: 800px) {
     .tab-content {
         width: 100vw;
-
         // QudosFave Faves tab
         #qudosfave-network--myqudos {
             .container {
@@ -621,6 +620,24 @@
                 }
             }
         }
+
+        #groups-network--create {
+
+            /** Create Groups Stylings **/
+            .qn__create-groups {
+                .qn__create-groups-form {
+                    form {
+                        .qudosfaves__searchbar {
+    
+                            .form-control-feedback {
+                                margin-top: -5px;
+                                left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /** Qudos Searchbar Stylings **/
@@ -637,31 +654,6 @@
         }
     }
 
-    #groups-network--create {
-
-        /** Create Groups Stylings **/
-        .qn__create-groups {
-            .qn__create-groups-form {
-                form {
-                    .qudosfaves__searchbar {
-
-                        .form-control-feedback {
-                            margin-top: -5px;
-                            left: 7px;
-                        }
-
-                        .form-control-hover-icon {
-                            right: 8px;
-
-                            .filter-icon {
-                                margin-top: -40px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media(max-width: 768px) {
