@@ -762,6 +762,18 @@
 }
 
 @media(max-width: 480px) {
+    .page__content {
+        .visible-mobile {
+            .filter {
+                .nav {
+                    .nav-item {
+                        width: 32.85%;
+                    }
+                }
+            }
+        }
+    }
+
     .tab-content {
         .tab-pane {
             .container {
