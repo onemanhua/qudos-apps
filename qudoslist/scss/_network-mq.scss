@@ -518,7 +518,7 @@
 
                 .col-xl-6 {
                     padding-left: 0;
-                    padding-right: 0;
+                    padding-right: 20px;
 
                     .user {
                         padding-left: 0;
@@ -671,7 +671,7 @@
         .tab-pane {
             .container {
                 .col-12 {
-                    width: 100%;
+                    width: 50%;
                     position: relative;
                     left: 0;
                     transform: translateX(0);
@@ -708,6 +708,9 @@
     .tab-content {
         .tab-pane {
             .container {
+                .col-xl-6 {
+                    padding-right: 0;
+                }
                 .col-xl-12 {
                     width: 50%;
                     position: relative;
@@ -777,7 +780,7 @@
     .tab-content {
         .tab-pane {
             .container {
-                .col-xl-12 {
+                .col-12 {
                     width: 100%;
                     position: relative;
                     left: 0;
