@@ -1,0 +1,24 @@
+{
+  "name": "qudoslist",
+  "version": "1.4.0",
+  "description": "QudosList basic HTML/CSS/JS backbone.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass -w scss/custom.scss css/custom.min.css --output-style compressed"
+  },
+  "keywords": [
+    "qudos",
+    "kudos",
+    "list",
+    "qudoslist",
+    "social",
+    "social",
+    "media"
+  ],
+  "author": "onemanhua",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
