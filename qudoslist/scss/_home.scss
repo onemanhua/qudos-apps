@@ -7,6 +7,10 @@
     }
 }
 
+.new-post__send, .search-box__btn {
+    @include qudos-gradient-button;
+}
+
 .qudoslist-card {
     border: 0;
 

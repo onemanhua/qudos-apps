@@ -324,7 +324,7 @@ ul.col.nav {
                     justify-content: center;
 
                     .qudos-primary-btn {
-                        @include qudos-primary-button;
+                        @include qudos-gradient-button;
                         padding-top: 6px;
                         width: 240px;
                         font-size: 16px;

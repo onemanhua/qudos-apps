@@ -1497,7 +1497,7 @@ ul {
 }
 .user__actions a:first-child {
   font-weight: 300;
-  background-color: #1f8dc6;
+  background-image: linear-gradient(to left, #243249 0%, #282828 0%, #243249 100%);
   color: #fff;
 }
 .user__actions a:nth-child(2) {

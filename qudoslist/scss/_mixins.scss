@@ -51,3 +51,14 @@
         box-shadow: none;
     }
 }
+
+@mixin qudos-gradient-button {
+    transition: 0.5s;
+    color: white;
+    background-size: 200% auto;
+    background-image: $qudos-dark-gradient;
+    border: none;
+    &:focus {
+        box-shadow: none;
+    }
+}
